@@ -1,13 +1,14 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import { io, Socket } from 'socket.io-client';
+import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
+import { Socket as PhoenixSocket } from 'phoenix';
 import { Game, Player, Question, GameContextType, AnswerStats } from '@/types/game.types';
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
 
 export function GameProvider({ children }: { children: React.ReactNode }) {
-  const [socket, setSocket] = useState<Socket | null>(null);
+  const channelRef = useRef<ReturnType<PhoenixSocket['channel']> | null>(null);
+  const socketRef = useRef<PhoenixSocket | null>(null);
   const [game, setGame] = useState<Game | null>(null);
   const [player, setPlayer] = useState<Player | null>(null);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -15,80 +16,114 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   const [leaderboard, setLeaderboard] = useState<Player[]>([]);
   const [showingResults, setShowingResults] = useState(false);
   const [answerStats, setAnswerStats] = useState<AnswerStats | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, setPlayerId] = useState<string | null>(null);
 
-  useEffect(() => {
-    const newSocket = io('http://localhost:3001');
-    setSocket(newSocket);
+  // Join a game-specific channel to receive broadcasts
+  const joinGameChannel = useCallback((gameId: string) => {
+    if (!socketRef.current) return;
 
-    newSocket.on('connect', () => {
-      setIsConnected(true);
-      console.log('Conectado ao servidor');
-    });
-
-    newSocket.on('disconnect', () => {
-      setIsConnected(false);
-      console.log('Desconectado do servidor');
-    });
-
-    newSocket.on('gameCreated', (data: { game: Game; playerId: string }) => {
-      setGame(data.game);
-      const hostPlayer = data.game.players.find(p => p.id === data.playerId);
-      if (hostPlayer) {
-        setPlayer(hostPlayer);
-      }
-    });
-
-    newSocket.on('gameJoined', (data: { game: Game; player: Player }) => {
-      setGame(data.game);
-      setPlayer(data.player);
-    });
-
-    newSocket.on('playerJoined', (data: { player: Player; game: Game }) => {
+    const gameChannel = socketRef.current.channel(`game:${gameId}`, {});
+    
+    gameChannel.on('playerJoined', (data: { player: Player; game: Game }) => {
       setGame(data.game);
     });
 
-    newSocket.on('gameStarted', (data: { game: Game; currentQuestion: Question }) => {
+    gameChannel.on('gameStarted', (data: { game: Game; currentQuestion: Question }) => {
       setGame(data.game);
       setCurrentQuestion(data.currentQuestion);
-      setLeaderboard([]); // Limpar leaderboard ao iniciar
+      setLeaderboard([]);
       setShowingResults(false);
-      setAnswerStats(null); // Resetar estatísticas
+      setAnswerStats(null);
     });
 
-    newSocket.on('nextQuestion', (data: { game: Game; currentQuestion: Question }) => {
+    gameChannel.on('nextQuestion', (data: { game: Game; currentQuestion: Question }) => {
       console.log('Nova pergunta recebida:', data);
       setGame(data.game);
       setCurrentQuestion(data.currentQuestion);
-      setLeaderboard([]); // Limpar leaderboard para nova pergunta
+      setLeaderboard([]);
       setShowingResults(false);
-      setAnswerStats(null); // Resetar estatísticas para nova pergunta
+      setAnswerStats(null);
     });
 
-    newSocket.on('answerStatsUpdated', (data: { stats: AnswerStats; questionId: string }) => {
+    gameChannel.on('answerStatsUpdated', (data: { stats: AnswerStats; questionId: string }) => {
       console.log('Estatísticas de respostas atualizadas:', data);
       setAnswerStats(data.stats);
     });
 
-    newSocket.on('questionResults', (data: { question: Question; leaderboard: Player[] }) => {
+    gameChannel.on('questionResults', (data: { question: Question; leaderboard: Player[] }) => {
       console.log('Resultados recebidos:', data);
       setCurrentQuestion(data.question);
       setLeaderboard(data.leaderboard);
       setShowingResults(true);
     });
 
-    newSocket.on('gameFinished', (data: { game: Game; leaderboard: Player[] }) => {
+    gameChannel.on('gameFinished', (data: { game: Game; leaderboard: Player[] }) => {
       setGame(data.game);
       setLeaderboard(data.leaderboard);
       setCurrentQuestion(null);
     });
 
-    newSocket.on('answerSubmitted', () => {
+    gameChannel.join()
+      .receive('ok', () => {
+        console.log(`Joined game channel: game:${gameId}`);
+      })
+      .receive('error', (resp: unknown) => {
+        console.error(`Failed to join game channel: game:${gameId}`, resp);
+      });
+
+    return gameChannel;
+  }, []);
+
+  useEffect(() => {
+    const phoenixSocket = new PhoenixSocket('ws://localhost:3001/socket', {});
+    socketRef.current = phoenixSocket;
+
+    phoenixSocket.onOpen(() => {
+      setIsConnected(true);
+      console.log('Conectado ao servidor Phoenix');
+    });
+
+    phoenixSocket.onClose(() => {
+      setIsConnected(false);
+      console.log('Desconectado do servidor Phoenix');
+    });
+
+    phoenixSocket.onError(() => {
+      setIsConnected(false);
+      console.error('Erro na conexão com servidor Phoenix');
+    });
+
+    phoenixSocket.connect();
+
+    // Join the lobby channel for creating/joining games
+    const lobbyChannel = phoenixSocket.channel('game:lobby', {});
+
+    lobbyChannel.on('gameCreated', (data: { game: Game; playerId: string }) => {
+      setGame(data.game);
+      setPlayerId(data.playerId);
+      const hostPlayer = data.game.players.find((p: Player) => p.id === data.playerId);
+      if (hostPlayer) {
+        setPlayer(hostPlayer);
+      }
+      // Join the game-specific channel for broadcasts
+      joinGameChannel(data.game.id);
+    });
+
+    lobbyChannel.on('gameJoined', (data: { game: Game; player: Player }) => {
+      setGame(data.game);
+      setPlayer(data.player);
+      setPlayerId(data.player.id);
+      // Join the game-specific channel for broadcasts
+      joinGameChannel(data.game.id);
+    });
+
+    lobbyChannel.on('answerSubmitted', () => {
       console.log('Resposta enviada com sucesso');
     });
 
-    newSocket.on('error', (data: { message: string; type?: string }) => {
+    lobbyChannel.on('error', (data: { message: string; type?: string }) => {
       console.error('Erro:', data.message);
-      
       if (data.type === 'ROOM_NOT_FOUND') {
         alert('⚠️ Sala não encontrada!\n\nO código da sala informado não existe ou a partida já foi iniciada. Verifique o código e tente novamente.');
       } else {
@@ -96,46 +131,60 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       }
     });
 
+    lobbyChannel.join()
+      .receive('ok', (resp: { playerId?: string }) => {
+        console.log('Conectado ao lobby', resp);
+        if (resp.playerId) {
+          setPlayerId(resp.playerId);
+        }
+      })
+      .receive('error', (resp: unknown) => {
+        console.error('Falha ao conectar ao lobby', resp);
+      });
+
+    channelRef.current = lobbyChannel;
+
     return () => {
-      newSocket.close();
+      lobbyChannel.leave();
+      phoenixSocket.disconnect();
     };
-  }, []);
+  }, [joinGameChannel]);
 
   const createGame = useCallback((hostName: string, avatar?: string) => {
-    if (socket) {
-      socket.emit('createGame', { hostName, avatar });
+    if (channelRef.current) {
+      channelRef.current.push('createGame', { hostName, avatar });
     }
-  }, [socket]);
+  }, []);
 
   const joinGame = useCallback((gameId: string, playerName: string, avatar?: string) => {
-    if (socket) {
-      socket.emit('joinGame', { gameId, playerName, avatar });
+    if (channelRef.current) {
+      channelRef.current.push('joinGame', { gameId, playerName, avatar });
     }
-  }, [socket]);
+  }, []);
 
   const startGame = useCallback(() => {
-    if (socket && game) {
-      socket.emit('startGame', { gameId: game.id });
+    if (channelRef.current && game) {
+      channelRef.current.push('startGame', { gameId: game.id });
     }
-  }, [socket, game]);
+  }, [game]);
 
   const nextQuestion = useCallback(() => {
-    if (socket && game) {
-      socket.emit('nextQuestion', { gameId: game.id });
+    if (channelRef.current && game) {
+      channelRef.current.push('nextQuestion', { gameId: game.id });
     }
-  }, [socket, game]);
+  }, [game]);
 
   const submitAnswer = useCallback((questionId: string, answer: number) => {
-    if (socket) {
-      socket.emit('submitAnswer', { questionId, answer });
+    if (channelRef.current) {
+      channelRef.current.push('submitAnswer', { questionId, answer });
     }
-  }, [socket]);
+  }, []);
 
   const showResults = useCallback(() => {
-    if (socket && game) {
-      socket.emit('showResults', { gameId: game.id });
+    if (channelRef.current && game) {
+      channelRef.current.push('showResults', { gameId: game.id });
     }
-  }, [socket, game]);
+  }, [game]);
 
   const isHost = player?.isHost || false;
 

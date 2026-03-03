@@ -1,0 +1,312 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Akeson et al. 2013]{akeson2013}
+\abntrefinfo{Akeson et al.}{AKESON et al.}{2013}
+{AKESON, R.~L. et al. The {NASA} exoplanet archive: Data and tools for
+  exoplanet research.
+\emph{Publications of the Astronomical Society of the Pacific}, IOP Publishing,
+  v.~125, n.~930, p. 989--999, 2013.}
+
+\bibitem[Ausubel 1968]{ausubel1968}
+\abntrefinfo{Ausubel}{AUSUBEL}{1968}
+{AUSUBEL, D.~P. \emph{Educational Psychology: A Cognitive View}. New York:
+  Holt, Rinehart and Winston, 1968.}
+
+\bibitem[Ausubel 2000]{ausubel2000}
+\abntrefinfo{Ausubel}{AUSUBEL}{2000}
+{AUSUBEL, D.~P. \emph{The Acquisition and Retention of Knowledge: A Cognitive
+  View}. Dordrecht: Springer, 2000.
+ISBN 978-0792365051.}
+
+\bibitem[Borucki et al. 2010]{borucki2010}
+\abntrefinfo{Borucki et al.}{BORUCKI et al.}{2010}
+{BORUCKI, W.~J. et al. {Kepler} planet-detection mission: Introduction and
+  first results.
+\emph{Science}, v.~327, n.~5968, p. 977--980, 2010.}
+
+\bibitem[Bretones e Compiani 2006]{bretones2006}
+\abntrefinfo{Bretones e Compiani}{BRETONES; COMPIANI}{2006}
+{BRETONES, P.~S.; COMPIANI, M. Ensino e aprendizagem de astronomia com o uso de
+  fóruns num ambiente virtual de aprendizagem.
+\emph{Ciência \& Educação}, UNESP, v.~12, n.~3, p. 289--305, 2006.}
+
+\bibitem[Bruno 1584]{bruno1584}
+\abntrefinfo{Bruno}{BRUNO}{1584}
+{BRUNO, G. \emph{De l'Infinito, Universo e Mondi}. Veneza: [s.n.], 1584.
+  Publicado originalmente em italiano em 1584.}
+
+\bibitem[Brusilovsky e Peylo 2003]{brusilovsky2007}
+\abntrefinfo{Brusilovsky e Peylo}{BRUSILOVSKY; PEYLO}{2003}
+{BRUSILOVSKY, P.; PEYLO, C. Adaptive and intelligent web-based educational
+  systems.
+\emph{International Journal of Artificial Intelligence in Education}, IOS
+  Press, v.~13, p. 159--172, 2003.}
+
+\bibitem[Cabello 2024]{threejs2024}
+\abntrefinfo{Cabello}{CABELLO}{2024}
+{CABELLO, R. \emph{Three.js: {JavaScript} {3D} Library}. 2024. Dispon{\'\i}vel
+  em: \url{https://threejs.org/}.
+Acesso em: 15 jan. 2026.}
+
+\bibitem[Caldwell 2007]{caldwell2007}
+\abntrefinfo{Caldwell}{CALDWELL}{2007}
+{CALDWELL, J.~E. Clickers in the large classroom: Current research and
+  best-practice tips.
+\emph{CBE---Life Sciences Education}, American Society for Cell Biology, v.~6,
+  n.~1, p. 9--20, 2007.}
+
+\bibitem[Csikszentmihalyi 1990]{csikszentmihalyi1990}
+\abntrefinfo{Csikszentmihalyi}{CSIKSZENTMIHALYI}{1990}
+{CSIKSZENTMIHALYI, M. Flow: The psychology of optimal experience.
+Harper \& Row, New York, 1990.}
+
+\bibitem[Deterding et al. 2011]{deterding2011}
+\abntrefinfo{Deterding et al.}{DETERDING et al.}{2011}
+{DETERDING, S. et al. From game design elements to gamefulness: Defining
+  ``gamification''.
+\emph{Proceedings of the 15th International Academic MindTrek Conference:
+  Envisioning Future Media Environments}, ACM, New York, p. 9--15, 2011.}
+
+\bibitem[Dicheva et al. 2015]{dicheva2015}
+\abntrefinfo{Dicheva et al.}{DICHEVA et al.}{2015}
+{DICHEVA, D. et al. Gamification in education: A systematic mapping study.
+\emph{Educational Technology \& Society}, v.~18, n.~3, p. 75--88, 2015.
+ISSN 1436-4522.}
+
+\bibitem[Dick 1982]{dick1982}
+\abntrefinfo{Dick}{DICK}{1982}
+{DICK, S.~J. \emph{Plurality of Worlds: The Origins of the Extraterrestrial
+  Life Debate from Democritus to Kant}. Cambridge: Cambridge University Press,
+  1982.
+ISBN 978-0521319850.}
+
+\bibitem[Gamma et al. 1994]{gamma1994}
+\abntrefinfo{Gamma et al.}{GAMMA et al.}{1994}
+{GAMMA, E. et al. \emph{Design Patterns: Elements of Reusable Object-Oriented
+  Software}. Reading: Addison-Wesley Professional, 1994.
+ISBN 978-0201633610.}
+
+\bibitem[Gatewood e Eichhorn 1973]{gatewood1973}
+\abntrefinfo{Gatewood e Eichhorn}{GATEWOOD; EICHHORN}{1973}
+{GATEWOOD, G.; EICHHORN, H. An unsuccessful search for a planetary companion of
+  {Barnard's} star ({BD} +4 3561).
+\emph{The Astronomical Journal}, v.~78, p. 769--776, 1973.}
+
+\bibitem[Hamari, Koivisto e Sarsa 2014]{hamari2014}
+\abntrefinfo{Hamari, Koivisto e Sarsa}{HAMARI; KOIVISTO; SARSA}{2014}
+{HAMARI, J.; KOIVISTO, J.; SARSA, H. Does gamification work? -- a literature
+  review of empirical studies on gamification.
+\emph{Proceedings of the 47th Hawaii International Conference on System
+  Sciences}, IEEE, p. 3025--3034, 2014.}
+
+\bibitem[Huygens 1698]{huygens1698}
+\abntrefinfo{Huygens}{HUYGENS}{1698}
+{HUYGENS, C. \emph{Cosmotheoros: sive De Terris Coelestibus, earumque ornatu,
+  conjecturae}. The Hague: Adriaan Moetjens, 1698. Publicado postumamente.}
+
+\bibitem[Jacob 1855]{jacob1855}
+\abntrefinfo{Jacob}{JACOB}{1855}
+{JACOB, W.~S. On certain anomalies presented by the binary star 70 ophiuchi.
+\emph{Monthly Notices of the Royal Astronomical Society}, v.~15, p. 228--230,
+  1855.}
+
+\bibitem[{JWST Transiting Exoplanet Community Early Release Science Team}
+  2023]{jwst2023}
+\abntrefinfo{{JWST Transiting Exoplanet Community Early Release Science
+  Team}}{{JWST Transiting Exoplanet Community Early Release Science
+  Team}}{2023}
+{{JWST Transiting Exoplanet Community Early Release Science Team}.
+  Identification of carbon dioxide in an exoplanet atmosphere.
+\emph{Nature}, v.~614, p. 649--652, 2023.}
+
+\bibitem[Kamp 1963]{vandekamp1963}
+\abntrefinfo{Kamp}{KAMP}{1963}
+{KAMP, P. van~de. Astrometric study of {Barnard's} star from plates taken with
+  the 24-inch {Sproul} refractor.
+\emph{The Astronomical Journal}, v.~68, p. 515--521, 1963.}
+
+\bibitem[Kapp 2012]{kapp2012}
+\abntrefinfo{Kapp}{KAPP}{2012}
+{KAPP, K.~M. \emph{The Gamification of Learning and Instruction: Game-based
+  Methods and Strategies for Training and Education}. San Francisco: Pfeiffer,
+  2012. 336~p.
+ISBN 978-1118096345.}
+
+\bibitem[Klašnja-Milićević et al. 2011]{klašnja2011}
+\abntrefinfo{Klašnja-Milićević et al.}{KLAšNJA-MILIćEVIć et al.}{2011}
+{KLAšNJA-MILIćEVIć, A. et al. E-learning personalization based on hybrid
+  recommendation strategy and learning style identification.
+\emph{Computers \& Education}, Elsevier, v.~56, n.~3, p. 885--899, 2011.}
+
+\bibitem[Langhi e Nardi 2009]{langhi2009}
+\abntrefinfo{Langhi e Nardi}{LANGHI; NARDI}{2009}
+{LANGHI, R.; NARDI, R. Ensino da astronomia no {B}rasil: educa{\c c}{\~a}o
+  formal, informal, n{\~a}o formal e divulga{\c c}{\~a}o cient{\'\i}fica.
+\emph{Revista Brasileira de Ensino de F{\'\i}sica}, Sociedade Brasileira de
+  F{\'\i}sica, v.~31, n.~4, p. 4402--1--4402--11, 2009.}
+
+\bibitem[Licorish et al. 2018]{licorish2018}
+\abntrefinfo{Licorish et al.}{LICORISH et al.}{2018}
+{LICORISH, S.~A. et al. Students' perception of {Kahoot!}'s influence on
+  teaching and learning. In:  \emph{Research and Practice in Technology
+  Enhanced Learning}. [S.l.: s.n.], 2018. v.~13, n.~9, p. 1--23.}
+
+\bibitem[Lubbers e Greco 2010]{lubbers2010}
+\abntrefinfo{Lubbers e Greco}{LUBBERS; GRECO}{2010}
+{LUBBERS, P.; GRECO, F. {HTML5} {WebSockets}: A quantum leap in scalability for
+  the web. In:  \emph{SOA World Magazine}. [S.l.]: SOA World, 2010. p.~1--5.}
+
+\bibitem[Majchrzak, Biørn-Hansen e Grønli 2018]{majchrzak2018}
+\abntrefinfo{Majchrzak, Biørn-Hansen e Grønli}{MAJCHRZAK; BIøRN-HANSEN;
+  GRøNLI}{2018}
+{MAJCHRZAK, T.~A.; BIøRN-HANSEN, A.; GRøNLI, T.-M. Progressive web apps: the
+  definite approach to cross-platform development?
+\emph{Proceedings of the 51st Hawaii International Conference on System
+  Sciences}, p. 5735--5744, 2018.}
+
+\bibitem[Martin 2008]{martin2008}
+\abntrefinfo{Martin}{MARTIN}{2008}
+{MARTIN, R.~C. \emph{Clean Code: A Handbook of Agile Software Craftsmanship}.
+  Upper Saddle River: Prentice Hall, 2008.
+ISBN 978-0132350884.}
+
+\bibitem[Mayor e Queloz 1995]{mayor1995}
+\abntrefinfo{Mayor e Queloz}{MAYOR; QUELOZ}{1995}
+{MAYOR, M.; QUELOZ, D. A jupiter-mass companion to a solar-type star.
+\emph{Nature}, v.~378, p. 355--359, 1995.}
+
+\bibitem[Murray 2013]{murray2013}
+\abntrefinfo{Murray}{MURRAY}{2013}
+{MURRAY, S. Interactive data visualization for the web.
+O'Reilly Media, Sebastopol, 2013.}
+
+\bibitem[Myśliwiec 2024]{nestjs2024}
+\abntrefinfo{Myśliwiec}{MYśLIWIEC}{2024}
+{MYśLIWIEC, K. \emph{{NestJS} Documentation}. 2024. Dispon{\'\i}vel em:
+  \url{https://docs.nestjs.com/}.
+Acesso em: 10 jan. 2026.}
+
+\bibitem[{NASA Exoplanet Archive} 2024]{nasaexoplanet2024}
+\abntrefinfo{{NASA Exoplanet Archive}}{{NASA Exoplanet Archive}}{2024}
+{{NASA Exoplanet Archive}. \emph{{NASA} Exoplanet Archive}. 2024.
+  Dispon{\'\i}vel em: \url{https://exoplanetarchive.ipac.caltech.edu/}.
+Acesso em: 15 jan. 2026.}
+
+\bibitem[Newton 1687]{newton1687}
+\abntrefinfo{Newton}{NEWTON}{1687}
+{NEWTON, I. \emph{Philosophi{\ae} Naturalis Principia Mathematica}. London:
+  Royal Society, 1687. Primeira edi{\c c}{\~a}o.}
+
+\bibitem[Papert 1980]{papert1980}
+\abntrefinfo{Papert}{PAPERT}{1980}
+{PAPERT, S. \emph{Mindstorms: Children, Computers, and Powerful Ideas}. New
+  York: Basic Books, 1980.
+ISBN 978-0465046744.}
+
+\bibitem[Papert 1993]{papert1993}
+\abntrefinfo{Papert}{PAPERT}{1993}
+{PAPERT, S. \emph{The Children's Machine: Rethinking School in the Age of the
+  Computer}. New York: Basic Books, 1993.
+ISBN 978-0465018307.}
+
+\bibitem[Perryman 2018]{perryman2018}
+\abntrefinfo{Perryman}{PERRYMAN}{2018}
+{PERRYMAN, M. The exoplanet handbook.
+Cambridge University Press, Cambridge, 2018.}
+
+\bibitem[Piaget 1964]{piaget1964}
+\abntrefinfo{Piaget}{PIAGET}{1964}
+{PIAGET, J. Part {I}: Cognitive development in children: {P}iaget development
+  and learning.
+\emph{Journal of Research in Science Teaching}, v.~2, n.~3, p. 176--186, 1964.}
+
+\bibitem[Puranik e Joshi 2024]{puranik2024}
+\abntrefinfo{Puranik e Joshi}{PURANIK; JOSHI}{2024}
+{PURANIK, P.; JOSHI, A. A comparative analysis of {REST} vs {WebSocket} for
+  real-time communication in web applications.
+\emph{International Journal of Computer Science and Information Technologies},
+  v.~15, n.~2, p. 45--52, 2024.}
+
+\bibitem[{Redis Ltd.} 2024]{redis2024}
+\abntrefinfo{{Redis Ltd.}}{{Redis Ltd.}}{2024}
+{{Redis Ltd.} \emph{Redis Documentation}. 2024. Dispon{\'\i}vel em:
+  \url{https://redis.io/docs/}.
+Acesso em: 20 jan. 2026.}
+
+\bibitem[Ricci, Rokach e Shapira 2011]{ricci2011}
+\abntrefinfo{Ricci, Rokach e Shapira}{RICCI; ROKACH; SHAPIRA}{2011}
+{RICCI, F.; ROKACH, L.; SHAPIRA, B. Introduction to recommender systems
+  handbook.
+Springer, New York, 2011.}
+
+\bibitem[Ricker et al. 2015]{ricker2015}
+\abntrefinfo{Ricker et al.}{RICKER et al.}{2015}
+{RICKER, G.~R. et al. Transiting exoplanet survey satellite ({TESS}).
+\emph{Journal of Astronomical Telescopes, Instruments, and Systems}, v.~1,
+  n.~1, p. 014003, 2015.}
+
+\bibitem[Ryan e Deci 2000]{ryan2000}
+\abntrefinfo{Ryan e Deci}{RYAN; DECI}{2000}
+{RYAN, R.~M.; DECI, E.~L. Self-determination theory and the facilitation of
+  intrinsic motivation, social development, and well-being.
+\emph{American Psychologist}, v.~55, n.~1, p. 68--78, 2000.}
+
+\bibitem[Sailer et al. 2017]{sailer2017}
+\abntrefinfo{Sailer et al.}{SAILER et al.}{2017}
+{SAILER, M. et al. How gamification motivates: An experimental study of the
+  effects of specific game design elements on psychological need satisfaction.
+\emph{Computers in Human Behavior}, Elsevier, v.~69, p. 371--380, 2017.}
+
+\bibitem[{Socket.IO} 2024]{socketio2024}
+\abntrefinfo{{Socket.IO}}{{Socket.IO}}{2024}
+{{Socket.IO}. \emph{Socket.{IO} Documentation}. 2024. Dispon{\'\i}vel em:
+  \url{https://socket.io/docs/}.
+Acesso em: 12 jan. 2026.}
+
+\bibitem[Struve 1952]{struve1952}
+\abntrefinfo{Struve}{STRUVE}{1952}
+{STRUVE, O. Proposal for a project of high-precision stellar radial velocity
+  work.
+\emph{The Observatory}, v.~72, p. 199--200, 1952.}
+
+\bibitem[Tilkov e Vinoski 2010]{tilkov2010}
+\abntrefinfo{Tilkov e Vinoski}{TILKOV; VINOSKI}{2010}
+{TILKOV, S.; VINOSKI, S. Node.js: Using {JavaScript} to build high-performance
+  network programs. In:  \emph{IEEE Internet Computing}. [S.l.]: IEEE, 2010.
+  v.~14, n.~6, p. 80--83.}
+
+\bibitem[{Vercel Inc.} 2024]{nextjs2024}
+\abntrefinfo{{Vercel Inc.}}{{Vercel Inc.}}{2024}
+{{Vercel Inc.} \emph{Next.js Documentation}. 2024. Dispon{\'\i}vel em:
+  \url{https://nextjs.org/docs}.
+Acesso em: 10 jan. 2026.}
+
+\bibitem[Vygotsky 1978]{vygotsky1978}
+\abntrefinfo{Vygotsky}{VYGOTSKY}{1978}
+{VYGOTSKY, L.~S. \emph{Mind in Society: The Development of Higher Psychological
+  Processes}. Cambridge: Harvard University Press, 1978.
+ISBN 978-0674576292.}
+
+\bibitem[Wang 2015]{wang2015}
+\abntrefinfo{Wang}{WANG}{2015}
+{WANG, A.~I. The wear out effect of a game-based student response system.
+\emph{Computers \& Education}, Elsevier, v.~82, p. 217--227, 2015.}
+
+\bibitem[Wang e Tahir 2020]{wang2020kahoot}
+\abntrefinfo{Wang e Tahir}{WANG; TAHIR}{2020}
+{WANG, A.~I.; TAHIR, R. The effect of using {Kahoot!} for learning -- a
+  literature review.
+\emph{Computers \& Education}, Elsevier, v.~149, p. 103818, 2020.}
+
+\bibitem[Wolszczan e Frail 1992]{wolszczan1992}
+\abntrefinfo{Wolszczan e Frail}{WOLSZCZAN; FRAIL}{1992}
+{WOLSZCZAN, A.; FRAIL, D.~A. A planetary system around the millisecond pulsar
+  {PSR1257}+12.
+\emph{Nature}, v.~355, p. 145--147, 1992.}
+
+\end{thebibliography}

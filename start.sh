@@ -30,10 +30,9 @@ echo "✅ Portas disponíveis"
 # Instalar dependências se necessário
 echo "📦 Verificando dependências..."
 
-if [ ! -d "backend/node_modules" ]; then
-    echo "📦 Instalando dependências do backend..."
-    cd backend && npm install && cd ..
-fi
+# Backend Elixir
+echo "📦 Verificando dependências do backend Elixir..."
+cd backend_elixir && mix deps.get && cd ..
 
 if [ ! -d "frontend/node_modules" ]; then
     echo "📦 Instalando dependências do frontend..."
@@ -43,9 +42,9 @@ fi
 echo "✅ Dependências verificadas"
 
 # Iniciar backend em background
-echo "🔧 Iniciando backend (porta 3001)..."
-cd backend
-npm run start:dev &
+echo "🔧 Iniciando backend Elixir/Phoenix (porta 3001)..."
+cd backend_elixir
+mix phx.server &
 BACKEND_PID=$!
 cd ..
 

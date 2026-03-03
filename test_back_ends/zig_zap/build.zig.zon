@@ -1,0 +1,15 @@
+.{
+    .name = "benchmark_zig",
+    .version = "0.0.1",
+    .dependencies = .{
+        .zap = .{
+            .url = "https://github.com/zigzap/zap/archive/refs/tags/v0.8.0.tar.gz",
+            .hash = "",
+        },
+        .pg = .{
+            .url = "https://github.com/karlseguin/pg.zig/archive/refs/tags/0.14.0.tar.gz",
+            .hash = "",
+        },
+    },
+    .paths = .{"."},
+}

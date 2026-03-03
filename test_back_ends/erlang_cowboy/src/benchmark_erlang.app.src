@@ -1,0 +1,9 @@
+{application, benchmark_erlang, [
+    {description, "Benchmark Erlang/Cowboy server"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {benchmark_app, []}},
+    {applications, [kernel, stdlib, cowboy, jiffy, epgsql]},
+    {env, []},
+    {modules, []}
+]}.

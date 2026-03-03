@@ -1,15 +1,19 @@
 {
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && npm run start:dev",
+    "dev:backend": "cd backend_elixir && mix phx.server",
     "dev:frontend": "cd frontend && npm run dev",
-    "build": "npm run build:backend && npm run build:frontend",
-    "build:backend": "cd backend && npm run build",
+    "build": "npm run build:frontend",
     "build:frontend": "cd frontend && npm run build",
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "start": "./start.sh"
+    "install:all": "cd backend_elixir && mix deps.get && cd ../frontend && npm install",
+    "start": "./start.sh",
+    "test:integration": "node test_integration.mjs"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "ws": "^8.19.0"
+  },
+  "dependencies": {
+    "phoenix": "^1.8.4"
   }
 }
