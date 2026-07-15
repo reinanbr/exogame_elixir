@@ -50,6 +50,12 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 EXPOSE 3000
-ENV PORT=3000
+
+# Docker auto-injects HOSTNAME=<container id> into every container, and
+# Next.js's standalone server.js does `process.env.HOSTNAME || '0.0.0.0'` —
+# without this override it silently binds only to the container's internal
+# bridge IP instead of all interfaces, refusing connections on 127.0.0.1.
+ENV PORT=3000 \
+    HOSTNAME="0.0.0.0"
 
 CMD ["node", "server.js"]
