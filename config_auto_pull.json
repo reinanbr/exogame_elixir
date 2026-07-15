@@ -1,5 +1,5 @@
 {
-  "repo_path": "/home/exogame.reinanbr.com/exogame",
+  "repo_path": "/home/exogame.reinanbr.com/exogame_elixir",
   "branch": "main",
   "check_interval_seconds": 5,
   "post_pull_command": "( docker-compose down && docker-compose build && docker-compose up -d &&  systemctl restart nginx ) >> /home/exogame.reinanbr.com/exogame/post_pull.log",
