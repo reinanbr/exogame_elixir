@@ -31,7 +31,11 @@ defmodule BackendElixirWeb.Endpoint do
     plug Phoenix.CodeReloader
   end
 
-  plug CORSPlug, origin: ["http://localhost:3000"]
+  # CORS_ORIGIN is read at compile time (baked into the image by the
+  # Dockerfile's build ARG) — in production, the reverse proxy puts the
+  # frontend and this API on the same origin, so this mostly guards direct,
+  # non-proxied access to the REST endpoints.
+  plug CORSPlug, origin: System.get_env("CORS_ORIGIN", "http://localhost:3000") |> String.split(",")
 
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]

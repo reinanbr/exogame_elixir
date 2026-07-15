@@ -21,6 +21,12 @@ export interface AnswerStats {
   pending: number;
 }
 
+/** Global activity counts shown by the home screen's connection widget. */
+export interface Stats {
+  activeGames: number;
+  activePlayers: number;
+}
+
 export interface Game {
   id: string;
   hostId: string;
@@ -28,7 +34,55 @@ export interface Game {
   questions: Question[];
   currentQuestionIndex: number;
   status: 'waiting' | 'playing' | 'finished';
-  currentQuestionStartTime?: Date;
+  /** ISO 8601 timestamp string as sent by the backend (`DateTime.to_iso8601/1`), not a Date instance. */
+  currentQuestionStartTime?: string;
+}
+
+// Phoenix channel event payloads — shapes GameContext.tsx's channel.on(...)
+// handlers receive from the backend (see game_channel.ex's broadcast!/push calls).
+export interface GameCreatedPayload {
+  game: Game;
+  playerId: string;
+}
+
+export interface GameJoinedPayload {
+  game: Game;
+  player: Player;
+}
+
+export interface PlayerJoinedPayload {
+  game: Game;
+}
+
+export interface PlayerLeftPayload {
+  playerId: string;
+  game: Game;
+}
+
+export type StatsUpdatedPayload = Stats;
+
+export interface GameQuestionPayload {
+  game: Game;
+  currentQuestion: Question;
+}
+
+export interface AnswerStatsUpdatedPayload {
+  stats: AnswerStats;
+}
+
+export interface QuestionResultsPayload {
+  question: Question;
+  leaderboard: Player[];
+}
+
+export interface GameFinishedPayload {
+  game: Game;
+  leaderboard: Player[];
+}
+
+export interface ErrorPayload {
+  message: string;
+  type?: 'ROOM_NOT_FOUND' | 'ALREADY_STARTED';
 }
 
 export interface GameContextType {
@@ -40,7 +94,10 @@ export interface GameContextType {
   leaderboard: Player[];
   showingResults: boolean;
   answerStats: AnswerStats | null;
-  
+  stats: Stats | null;
+  /** Round-trip latency to the backend in milliseconds, or `null` before the first measurement. */
+  pingMs: number | null;
+
   // Actions
   createGame: (hostName: string, avatar?: string) => void;
   joinGame: (gameId: string, playerName: string, avatar?: string) => void;

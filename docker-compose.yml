@@ -1,0 +1,101 @@
+services:
+  # ─────────────────────────────────────────────────
+  # Backend – Phoenix / Elixir (BEAM)  ← backend principal
+  # ─────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend_elixir
+      dockerfile: Dockerfile
+      args:
+        CORS_ORIGIN: "https://${DOMAIN}"
+    container_name: exogame_backend
+    restart: unless-stopped
+    environment:
+      MIX_ENV: prod
+      PHX_SERVER: "true"
+      PORT: "3001"
+      PHX_HOST: "${DOMAIN}"
+      SECRET_KEY_BASE: "${SECRET_KEY_BASE}"
+    networks:
+      - exogame_net
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1024M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider",
+             "http://localhost:3001/questions"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # ─────────────────────────────────────────────────
+  # Frontend – Next.js
+  # ─────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Baked into the client bundle at build time — same origin as the
+        # proxy below, so the browser talks to the domain, not a container.
+        NEXT_PUBLIC_PHOENIX_URL: "wss://${DOMAIN}/socket"
+        NEXT_PUBLIC_API_URL: "https://${DOMAIN}"
+    container_name: exogame_frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    networks:
+      - exogame_net
+    depends_on:
+      backend:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1024M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider",
+             "http://localhost:3000"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+
+  # ─────────────────────────────────────────────────
+  # Proxy – single entry point for the whole stack.
+  # The host-level nginx + certbot (managed outside this compose file, per
+  # config_deploy_site.json) terminates TLS for ${DOMAIN} and forwards to
+  # 127.0.0.1:${PROXY_PORT}, which lands here.
+  # ─────────────────────────────────────────────────
+  proxy:
+    image: nginx:1.27-alpine
+    container_name: exogame_proxy
+    restart: unless-stopped
+    volumes:
+      - ./deploy/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "${PROXY_PORT:-6969}:80"
+    networks:
+      - exogame_net
+    depends_on:
+      frontend:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+
+# ─────────────────────────────────────────────────
+# Shared network
+# ─────────────────────────────────────────────────
+networks:
+  exogame_net:
+    driver: bridge

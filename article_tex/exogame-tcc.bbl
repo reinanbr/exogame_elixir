@@ -12,6 +12,26 @@
 \emph{Publications of the Astronomical Society of the Pacific}, IOP Publishing,
   v.~125, n.~930, p. 989--999, 2013.}
 
+\bibitem[Anglada-Escud{\'{e}} et al. 2016]{anglada2016}
+\abntrefinfo{Anglada-Escud{\'{e}} et al.}{ANGLADA-ESCUD{\'{E}} et al.}{2016}
+{ANGLADA-ESCUD{\'{E}}, G. et al. A terrestrial planet candidate in a temperate
+  orbit around {Proxima Centauri}.
+\emph{Nature}, v.~536, p. 437--440, 2016.}
+
+\bibitem[Armstrong 2003]{armstrong2003}
+\abntrefinfo{Armstrong}{ARMSTRONG}{2003}
+{ARMSTRONG, J.
+\emph{Making Reliable Distributed Systems in the Presence of Software Errors}.
+Tese (Doutorado) --- Royal Institute of Technology (KTH), Stockholm, Sweden,
+  2003. Tese de doutorado que fundamenta o modelo de tolerância a falhas da
+  BEAM (Erlang/Elixir).}
+
+\bibitem[Armstrong 2013]{armstrong2013}
+\abntrefinfo{Armstrong}{ARMSTRONG}{2013}
+{ARMSTRONG, J. \emph{Programming Erlang: Software for a Concurrent World}. 2.
+  ed. Dallas, TX: Pragmatic Bookshelf, 2013.
+ISBN 978-1937785536.}
+
 \bibitem[Ausubel 1968]{ausubel1968}
 \abntrefinfo{Ausubel}{AUSUBEL}{1968}
 {AUSUBEL, D.~P. \emph{Educational Psychology: A Cognitive View}. New York:
@@ -22,6 +42,11 @@
 {AUSUBEL, D.~P. \emph{The Acquisition and Retention of Knowledge: A Cognitive
   View}. Dordrecht: Springer, 2000.
 ISBN 978-0792365051.}
+
+\bibitem[Benz et al. 2021]{benz2021}
+\abntrefinfo{Benz et al.}{BENZ et al.}{2021}
+{BENZ, W. et al. The {CHEOPS} mission.
+\emph{Experimental Astronomy}, v.~51, p. 109--151, 2021.}
 
 \bibitem[Borucki et al. 2010]{borucki2010}
 \abntrefinfo{Borucki et al.}{BORUCKI et al.}{2010}
@@ -91,11 +116,22 @@ ISBN 978-0521319850.}
   Software}. Reading: Addison-Wesley Professional, 1994.
 ISBN 978-0201633610.}
 
+\bibitem[Gardner et al. 2006]{gardner2006}
+\abntrefinfo{Gardner et al.}{GARDNER et al.}{2006}
+{GARDNER, J.~P. et al. The {James Webb Space Telescope}.
+\emph{Space Science Reviews}, v.~123, p. 485--606, 2006.}
+
 \bibitem[Gatewood e Eichhorn 1973]{gatewood1973}
 \abntrefinfo{Gatewood e Eichhorn}{GATEWOOD; EICHHORN}{1973}
 {GATEWOOD, G.; EICHHORN, H. An unsuccessful search for a planetary companion of
   {Barnard's} star ({BD} +4 3561).
 \emph{The Astronomical Journal}, v.~78, p. 769--776, 1973.}
+
+\bibitem[Gillon et al. 2017]{gillon2017}
+\abntrefinfo{Gillon et al.}{GILLON et al.}{2017}
+{GILLON, M. et al. Seven temperate terrestrial planets around the nearby
+  ultracool dwarf star {TRAPPIST-1}.
+\emph{Nature}, v.~542, p. 456--460, 2017.}
 
 \bibitem[Hamari, Koivisto e Sarsa 2014]{hamari2014}
 \abntrefinfo{Hamari, Koivisto e Sarsa}{HAMARI; KOIVISTO; SARSA}{2014}
@@ -114,6 +150,12 @@ ISBN 978-0201633610.}
 {JACOB, W.~S. On certain anomalies presented by the binary star 70 ophiuchi.
 \emph{Monthly Notices of the Royal Astronomical Society}, v.~15, p. 228--230,
   1855.}
+
+\bibitem[Jenkins et al. 2015]{jenkins2015}
+\abntrefinfo{Jenkins et al.}{JENKINS et al.}{2015}
+{JENKINS, J.~M. et al. Discovery and validation of {Kepler-452b}: A
+  1.6-{$R_\oplus$} super earth exoplanet in the habitable zone of a {G2} star.
+\emph{The Astronomical Journal}, v.~150, n.~2, p.~56, 2015.}
 
 \bibitem[{JWST Transiting Exoplanet Community Early Release Science Team}
   2023]{jwst2023}
@@ -136,6 +178,12 @@ ISBN 978-0201633610.}
   Methods and Strategies for Training and Education}. San Francisco: Pfeiffer,
   2012. 336~p.
 ISBN 978-1118096345.}
+
+\bibitem[Kasting, Whitmire e Reynolds 1993]{kasting1993}
+\abntrefinfo{Kasting, Whitmire e Reynolds}{KASTING; WHITMIRE; REYNOLDS}{1993}
+{KASTING, J.~F.; WHITMIRE, D.~P.; REYNOLDS, R.~T. Habitable zones around main
+  sequence stars.
+\emph{Icarus}, v.~101, n.~1, p. 108--128, 1993.}
 
 \bibitem[Klašnja-Milićević et al. 2011]{klašnja2011}
 \abntrefinfo{Klašnja-Milićević et al.}{KLAšNJA-MILIćEVIć et al.}{2011}
@@ -161,6 +209,12 @@ ISBN 978-1118096345.}
 {LUBBERS, P.; GRECO, F. {HTML5} {WebSockets}: A quantum leap in scalability for
   the web. In:  \emph{SOA World Magazine}. [S.l.]: SOA World, 2010. p.~1--5.}
 
+\bibitem[Madhusudhan et al. 2023]{madhusudhan2023}
+\abntrefinfo{Madhusudhan et al.}{MADHUSUDHAN et al.}{2023}
+{MADHUSUDHAN, N. et al. Carbon-bearing molecules in a possible hycean
+  atmosphere.
+\emph{The Astrophysical Journal Letters}, v.~956, n.~1, p.~L18, 2023.}
+
 \bibitem[Majchrzak, Biørn-Hansen e Grønli 2018]{majchrzak2018}
 \abntrefinfo{Majchrzak, Biørn-Hansen e Grønli}{MAJCHRZAK; BIøRN-HANSEN;
   GRøNLI}{2018}
@@ -180,16 +234,16 @@ ISBN 978-0132350884.}
 {MAYOR, M.; QUELOZ, D. A jupiter-mass companion to a solar-type star.
 \emph{Nature}, v.~378, p. 355--359, 1995.}
 
+\bibitem[McCord e {Phoenix Core Team} 2024]{phoenix2024}
+\abntrefinfo{McCord e {Phoenix Core Team}}{MCCORD; {Phoenix Core Team}}{2024}
+{MCCORD, C.; {Phoenix Core Team}. \emph{Phoenix Framework Documentation}. 2024.
+  Dispon{\'\i}vel em: \url{https://hexdocs.pm/phoenix/}.
+Acesso em: 10 jan. 2026.}
+
 \bibitem[Murray 2013]{murray2013}
 \abntrefinfo{Murray}{MURRAY}{2013}
 {MURRAY, S. Interactive data visualization for the web.
 O'Reilly Media, Sebastopol, 2013.}
-
-\bibitem[Myśliwiec 2024]{nestjs2024}
-\abntrefinfo{Myśliwiec}{MYśLIWIEC}{2024}
-{MYśLIWIEC, K. \emph{{NestJS} Documentation}. 2024. Dispon{\'\i}vel em:
-  \url{https://docs.nestjs.com/}.
-Acesso em: 10 jan. 2026.}
 
 \bibitem[{NASA Exoplanet Archive} 2024]{nasaexoplanet2024}
 \abntrefinfo{{NASA Exoplanet Archive}}{{NASA Exoplanet Archive}}{2024}
@@ -232,12 +286,6 @@ Cambridge University Press, Cambridge, 2018.}
 \emph{International Journal of Computer Science and Information Technologies},
   v.~15, n.~2, p. 45--52, 2024.}
 
-\bibitem[{Redis Ltd.} 2024]{redis2024}
-\abntrefinfo{{Redis Ltd.}}{{Redis Ltd.}}{2024}
-{{Redis Ltd.} \emph{Redis Documentation}. 2024. Dispon{\'\i}vel em:
-  \url{https://redis.io/docs/}.
-Acesso em: 20 jan. 2026.}
-
 \bibitem[Ricci, Rokach e Shapira 2011]{ricci2011}
 \abntrefinfo{Ricci, Rokach e Shapira}{RICCI; ROKACH; SHAPIRA}{2011}
 {RICCI, F.; ROKACH, L.; SHAPIRA, B. Introduction to recommender systems
@@ -262,29 +310,30 @@ Springer, New York, 2011.}
   effects of specific game design elements on psychological need satisfaction.
 \emph{Computers in Human Behavior}, Elsevier, v.~69, p. 371--380, 2017.}
 
-\bibitem[{Socket.IO} 2024]{socketio2024}
-\abntrefinfo{{Socket.IO}}{{Socket.IO}}{2024}
-{{Socket.IO}. \emph{Socket.{IO} Documentation}. 2024. Dispon{\'\i}vel em:
-  \url{https://socket.io/docs/}.
-Acesso em: 12 jan. 2026.}
-
 \bibitem[Struve 1952]{struve1952}
 \abntrefinfo{Struve}{STRUVE}{1952}
 {STRUVE, O. Proposal for a project of high-precision stellar radial velocity
   work.
 \emph{The Observatory}, v.~72, p. 199--200, 1952.}
 
-\bibitem[Tilkov e Vinoski 2010]{tilkov2010}
-\abntrefinfo{Tilkov e Vinoski}{TILKOV; VINOSKI}{2010}
-{TILKOV, S.; VINOSKI, S. Node.js: Using {JavaScript} to build high-performance
-  network programs. In:  \emph{IEEE Internet Computing}. [S.l.]: IEEE, 2010.
-  v.~14, n.~6, p. 80--83.}
+\bibitem[Valim e {Elixir Core Team} 2024]{elixir2024}
+\abntrefinfo{Valim e {Elixir Core Team}}{VALIM; {Elixir Core Team}}{2024}
+{VALIM, J.; {Elixir Core Team}. \emph{Elixir --- A dynamic, functional language
+  for building scalable and maintainable applications}. 2024. Dispon{\'\i}vel
+  em: \url{https://elixir-lang.org/}.
+Acesso em: 10 jan. 2026.}
 
 \bibitem[{Vercel Inc.} 2024]{nextjs2024}
 \abntrefinfo{{Vercel Inc.}}{{Vercel Inc.}}{2024}
 {{Vercel Inc.} \emph{Next.js Documentation}. 2024. Dispon{\'\i}vel em:
   \url{https://nextjs.org/docs}.
 Acesso em: 10 jan. 2026.}
+
+\bibitem[Vidal-Madjar et al. 2003]{vidalmadjur2003}
+\abntrefinfo{Vidal-Madjar et al.}{VIDAL-MADJAR et al.}{2003}
+{VIDAL-MADJAR, A. et al. An extended upper atmosphere around the extrasolar
+  planet {HD209458b}.
+\emph{Nature}, v.~422, p. 143--146, 2003.}
 
 \bibitem[Vygotsky 1978]{vygotsky1978}
 \abntrefinfo{Vygotsky}{VYGOTSKY}{1978}
@@ -306,7 +355,7 @@ ISBN 978-0674576292.}
 \bibitem[Wolszczan e Frail 1992]{wolszczan1992}
 \abntrefinfo{Wolszczan e Frail}{WOLSZCZAN; FRAIL}{1992}
 {WOLSZCZAN, A.; FRAIL, D.~A. A planetary system around the millisecond pulsar
-  {PSR1257}+12.
+  {PSR1257+12}.
 \emph{Nature}, v.~355, p. 145--147, 1992.}
 
 \end{thebibliography}

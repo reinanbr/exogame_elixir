@@ -18,6 +18,8 @@ defmodule BackendElixir.Game.Player do
           avatar: String.t()
         }
 
+  @doc "Builds a new player record with score 0, picking a random avatar if none is given."
+  @spec new(String.t(), String.t(), boolean(), String.t() | nil) :: t()
   def new(id, name, is_host \\ false, avatar \\ nil) do
     %{
       id: id,
@@ -28,6 +30,8 @@ defmodule BackendElixir.Game.Player do
     }
   end
 
+  @doc "The fixed list of avatar emoji players can choose from."
+  @spec available_avatars() :: [String.t()]
   def available_avatars, do: @avatars
 
   defp random_avatar do

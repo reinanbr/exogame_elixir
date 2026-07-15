@@ -1,0 +1,130 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{17}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problema de Pesquisa}{17}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{18}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{18}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{18}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Justificativa}{18}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Estrutura do Trabalho}{19}{section.1.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{20}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Gamificação no Ensino}{20}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Conceitos e Definições}{20}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Fundamentos Teóricos da Aprendizagem}{20}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Construcionismo de Papert e a Aprendizagem pela Ação}{21}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Aprendizagem Significativa de Ausubel}{22}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Síntese: O Aluno como Protagonista Epistêmico}{23}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Evidências Empíricas}{24}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Elementos de Gamificação no ExoGame}{24}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Gamificação e Tecnologia \textit {Web}: Uma Convergência Transformadora}{24}{subsection.2.1.8}%
+\contentsline {subsubsection}{\numberline {2.1.8.1}Dos \textit {Clickers} aos Quizzes \textit {Web}: A Evolução dos Sistemas de Resposta}{24}{subsubsection.2.1.8.1}%
+\contentsline {subsubsection}{\numberline {2.1.8.2}Kahoot! como Paradigma da Gamificação \textit {Web}}{26}{subsubsection.2.1.8.2}%
+\contentsline {subsubsection}{\numberline {2.1.8.3}Por Que a \textit {Web}? Vantagens Técnicas e Pedagógicas}{26}{subsubsection.2.1.8.3}%
+\contentsline {subsubsection}{\numberline {2.1.8.4}O Impacto da Pandemia: Aceleração da Convergência}{27}{subsubsection.2.1.8.4}%
+\contentsline {subsubsection}{\numberline {2.1.8.5}Síntese: O Papel da \textit {Web} na Democratização da Gamificação Educacional}{28}{subsubsection.2.1.8.5}%
+\contentsline {section}{\numberline {2.2}Tecnologias \textit {Web} para Aplicações em Tempo Real}{29}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}A Evolução da \textit {Web} em Tempo Real}{29}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Next.js: \textit {Framework} para o \textit {Frontend}}{29}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Elixir: Origem, Filosofia e Trajetória}{29}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Phoenix: O \textit {Framework Web} do Elixir}{30}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Escalabilidade do Phoenix/Elixir: Propriedades do \textit {Backend} Principal}{31}{subsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.5.1}Arquitetura Baseada em Processos OTP}{31}{subsubsection.2.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.2.5.2}Escalabilidade Horizontal Nativa com Erlang/OTP}{32}{subsubsection.2.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.2.5.3}Análise Comparativa de Capacidade}{32}{subsubsection.2.2.5.3}%
+\contentsline {subsection}{\numberline {2.2.6}WhatsApp e a BEAM: A Prova Industrial da Superioridade Erlang para WebSocket}{33}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6.1}A Migração do WhatsApp para Erlang/BEAM}{34}{subsubsection.2.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.2.6.2}Marcos de Escalabilidade do WhatsApp com BEAM}{34}{subsubsection.2.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.2.6.3}Paralelismo com o ExoGame}{34}{subsubsection.2.2.6.3}%
+\contentsline {subsection}{\numberline {2.2.7}Comparativo de Tecnologias}{35}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Ensino de Astronomia e Divulgação Científica}{35}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Situação do Ensino de Astronomia no Brasil}{35}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Exoplanetas: Uma Trajetória Histórica de Quatro Séculos}{36}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Os Precursores Filosóficos: De Epicuro a Giordano Bruno}{36}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}O Período Newtoniano e os Primeiros Cálculos}{37}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Século XIX: Primeiras Tentativas de Detecção}{37}{subsubsection.2.3.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.2.4}A Proposta de Otto Struve e os Métodos Indiretos}{38}{subsubsection.2.3.2.4}%
+\contentsline {subsubsection}{\numberline {2.3.2.5}A Primeira Detecção: Planetas ao Redor de um Pulsar (1992)}{38}{subsubsection.2.3.2.5}%
+\contentsline {subsubsection}{\numberline {2.3.2.6}A Revolução de 1995: 51 Pegasi b e o Júpiter Quente}{39}{subsubsection.2.3.2.6}%
+\contentsline {subsubsection}{\numberline {2.3.2.7}A Era Kepler: A Explosão Estatística (2009--2018)}{39}{subsubsection.2.3.2.7}%
+\contentsline {subsubsection}{\numberline {2.3.2.8}TESS e a Era Atual (2018--Presente)}{40}{subsubsection.2.3.2.8}%
+\contentsline {subsubsection}{\numberline {2.3.2.9}Linha do Tempo: Marcos na História dos Exoplanetas}{41}{subsubsection.2.3.2.9}%
+\contentsline {subsubsection}{\numberline {2.3.2.10}Significado para a Educação Científica}{41}{subsubsection.2.3.2.10}%
+\contentsline {subsection}{\numberline {2.3.3}Acurácia Científica: O NASA Exoplanet Archive como Fonte Primária}{41}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Caracterização do NASA Exoplanet Archive}{41}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Protocolo de Elaboração de Questões}{43}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Validade Científica como Diferencial Pedagógico}{43}{subsubsection.2.3.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.4}Banco de Questões Implementado}{44}{subsubsection.2.3.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Tecnologias Interativas na Divulgação Científica}{44}{subsection.2.3.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Classificação da Pesquisa}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Ferramentas de Desenvolvimento}{47}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Processo de Desenvolvimento}{48}{section.3.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Arquitetura do Sistema}}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Visão Geral da Arquitetura}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estrutura de Módulos do \textit {Backend}}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Estrutura de Componentes do \textit {Frontend}}{50}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Protocolo de Comunicação WebSocket}{50}{section.4.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Detalhes de Implementação}}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interfaces de Dados}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Gateway WebSocket: Phoenix Channels}{53}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Sistema de Pontuação}{53}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Gerenciamento de Estado no \textit {Frontend}}{54}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Validação de Dados via \textit {Pattern Matching}}{55}{section.5.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados e Discussão}}{57}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Funcionalidades Implementadas}{57}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Fluxo de Criação de Sala}{57}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Fluxo de Entrada via PIN}{57}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Dinâmica do Quiz}{58}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Sistema de Pontuação}{58}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Segurança nas Comunicações}{58}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Avaliação Empírica de Desempenho do \textit {Backend}}{59}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Metodologia dos Testes}{59}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Latência HTTP por Nível de Concorrência}{59}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Comparação entre Endpoints HTTP}{60}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Throughput Sustentado}{60}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Conexões WebSocket Simultâneas (Phoenix Channels)}{61}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}Visualização Gráfica dos Resultados}{61}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}Interpretação dos Resultados}{61}{subsection.6.3.7}%
+\contentsline {section}{\numberline {6.4}Discussão}{63}{section.6.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Trabalhos Futuros}}{64}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Visualização 3D de Exoplanetas com Three.js}{64}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Algoritmos de Recomendação para Trilhas de Aprendizagem}{64}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Modelo de Desempenho do Aluno}{65}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Algoritmo de Recomendação}{65}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Outras Melhorias Propostas}{65}{section.7.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{Conclusão}}{67}{chapter.8}%
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{69}{section*.20}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{73}{section*.21}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Estrutura de Diretórios do Projeto}}{74}{appendix.A}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Diagrama de Fluxo da Partida}}{76}{appendix.B}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Configuração Docker Compose}}{78}{appendix.C}%
+\vspace {\cftbeforechapterskip }

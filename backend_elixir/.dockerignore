@@ -1,0 +1,6 @@
+_build
+deps
+.git
+*.ez
+priv/static/assets
+.env

@@ -2,7 +2,26 @@
 
 import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
 import { Socket as PhoenixSocket } from 'phoenix';
-import { Game, Player, Question, GameContextType, AnswerStats } from '@/types/game.types';
+import {
+  Game,
+  Player,
+  Question,
+  GameContextType,
+  AnswerStats,
+  Stats,
+  GameCreatedPayload,
+  GameJoinedPayload,
+  PlayerJoinedPayload,
+  PlayerLeftPayload,
+  GameQuestionPayload,
+  AnswerStatsUpdatedPayload,
+  QuestionResultsPayload,
+  GameFinishedPayload,
+  StatsUpdatedPayload,
+  ErrorPayload,
+} from '@/types/game.types';
+
+const PING_INTERVAL_MS = 5000;
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
 
@@ -16,8 +35,8 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   const [leaderboard, setLeaderboard] = useState<Player[]>([]);
   const [showingResults, setShowingResults] = useState(false);
   const [answerStats, setAnswerStats] = useState<AnswerStats | null>(null);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, setPlayerId] = useState<string | null>(null);
+  const [stats, setStats] = useState<Stats | null>(null);
+  const [pingMs, setPingMs] = useState<number | null>(null);
 
   // Join a game-specific channel to receive broadcasts
   const joinGameChannel = useCallback((gameId: string) => {
@@ -25,11 +44,15 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
 
     const gameChannel = socketRef.current.channel(`game:${gameId}`, {});
     
-    gameChannel.on('playerJoined', (data: { player: Player; game: Game }) => {
+    gameChannel.on('playerJoined', (data: PlayerJoinedPayload) => {
       setGame(data.game);
     });
 
-    gameChannel.on('gameStarted', (data: { game: Game; currentQuestion: Question }) => {
+    gameChannel.on('playerLeft', (data: PlayerLeftPayload) => {
+      setGame(data.game);
+    });
+
+    gameChannel.on('gameStarted', (data: GameQuestionPayload) => {
       setGame(data.game);
       setCurrentQuestion(data.currentQuestion);
       setLeaderboard([]);
@@ -37,7 +60,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       setAnswerStats(null);
     });
 
-    gameChannel.on('nextQuestion', (data: { game: Game; currentQuestion: Question }) => {
+    gameChannel.on('nextQuestion', (data: GameQuestionPayload) => {
       console.log('Nova pergunta recebida:', data);
       setGame(data.game);
       setCurrentQuestion(data.currentQuestion);
@@ -46,19 +69,19 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       setAnswerStats(null);
     });
 
-    gameChannel.on('answerStatsUpdated', (data: { stats: AnswerStats; questionId: string }) => {
+    gameChannel.on('answerStatsUpdated', (data: AnswerStatsUpdatedPayload) => {
       console.log('Estatísticas de respostas atualizadas:', data);
       setAnswerStats(data.stats);
     });
 
-    gameChannel.on('questionResults', (data: { question: Question; leaderboard: Player[] }) => {
+    gameChannel.on('questionResults', (data: QuestionResultsPayload) => {
       console.log('Resultados recebidos:', data);
       setCurrentQuestion(data.question);
       setLeaderboard(data.leaderboard);
       setShowingResults(true);
     });
 
-    gameChannel.on('gameFinished', (data: { game: Game; leaderboard: Player[] }) => {
+    gameChannel.on('gameFinished', (data: GameFinishedPayload) => {
       setGame(data.game);
       setLeaderboard(data.leaderboard);
       setCurrentQuestion(null);
@@ -76,7 +99,8 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    const phoenixSocket = new PhoenixSocket('ws://localhost:3001/socket', {});
+    const socketUrl = process.env.NEXT_PUBLIC_PHOENIX_URL ?? 'ws://localhost:3001/socket';
+    const phoenixSocket = new PhoenixSocket(socketUrl, {});
     socketRef.current = phoenixSocket;
 
     phoenixSocket.onOpen(() => {
@@ -99,9 +123,8 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     // Join the lobby channel for creating/joining games
     const lobbyChannel = phoenixSocket.channel('game:lobby', {});
 
-    lobbyChannel.on('gameCreated', (data: { game: Game; playerId: string }) => {
+    lobbyChannel.on('gameCreated', (data: GameCreatedPayload) => {
       setGame(data.game);
-      setPlayerId(data.playerId);
       const hostPlayer = data.game.players.find((p: Player) => p.id === data.playerId);
       if (hostPlayer) {
         setPlayer(hostPlayer);
@@ -110,10 +133,9 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       joinGameChannel(data.game.id);
     });
 
-    lobbyChannel.on('gameJoined', (data: { game: Game; player: Player }) => {
+    lobbyChannel.on('gameJoined', (data: GameJoinedPayload) => {
       setGame(data.game);
       setPlayer(data.player);
-      setPlayerId(data.player.id);
       // Join the game-specific channel for broadcasts
       joinGameChannel(data.game.id);
     });
@@ -122,10 +144,16 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       console.log('Resposta enviada com sucesso');
     });
 
-    lobbyChannel.on('error', (data: { message: string; type?: string }) => {
+    lobbyChannel.on('statsUpdated', (data: StatsUpdatedPayload) => {
+      setStats(data);
+    });
+
+    lobbyChannel.on('error', (data: ErrorPayload) => {
       console.error('Erro:', data.message);
       if (data.type === 'ROOM_NOT_FOUND') {
-        alert('⚠️ Sala não encontrada!\n\nO código da sala informado não existe ou a partida já foi iniciada. Verifique o código e tente novamente.');
+        alert('⚠️ Sala não encontrada!\n\nO código da sala informado não existe. Verifique o código e tente novamente.');
+      } else if (data.type === 'ALREADY_STARTED') {
+        alert('⚠️ Partida já iniciada!\n\nEssa sala já começou a partida e não aceita novos jogadores.');
       } else {
         alert(data.message);
       }
@@ -134,9 +162,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     lobbyChannel.join()
       .receive('ok', (resp: { playerId?: string }) => {
         console.log('Conectado ao lobby', resp);
-        if (resp.playerId) {
-          setPlayerId(resp.playerId);
-        }
       })
       .receive('error', (resp: unknown) => {
         console.error('Falha ao conectar ao lobby', resp);
@@ -149,6 +174,29 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       phoenixSocket.disconnect();
     };
   }, [joinGameChannel]);
+
+  // Round-trip latency to the backend, shown by the home screen's connection
+  // widget — measured via a dedicated no-op "ping" channel event rather than
+  // Phoenix's own heartbeat, since the heartbeat's timing isn't exposed here.
+  useEffect(() => {
+    if (!isConnected) {
+      setPingMs(null);
+      return;
+    }
+
+    const measurePing = () => {
+      if (!channelRef.current) return;
+      const start = performance.now();
+      channelRef.current
+        .push('ping', {})
+        .receive('ok', () => setPingMs(Math.round(performance.now() - start)));
+    };
+
+    measurePing();
+    const interval = setInterval(measurePing, PING_INTERVAL_MS);
+
+    return () => clearInterval(interval);
+  }, [isConnected]);
 
   const createGame = useCallback((hostName: string, avatar?: string) => {
     if (channelRef.current) {
@@ -197,6 +245,8 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     leaderboard,
     showingResults,
     answerStats,
+    stats,
+    pingMs,
     createGame,
     joinGame,
     startGame,

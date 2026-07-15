@@ -1,0 +1,11 @@
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Evolução da gamificação educacional por plataforma tecnológica}}{28}{table.2.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Comparativo de estratégias de escalabilidade do backend Phoenix/Elixir}}{33}{table.2.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Comparativo entre as tecnologias do \textit {frontend} e \textit {backend}}}{36}{table.2.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Linha do tempo dos marcos na história dos exoplanetas}}{42}{table.2.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces Exemplos de transposição de dados NASA para questões do ExoGame}}{44}{table.2.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Eventos WebSocket da plataforma ExoGame}}{51}{table.4.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Latência HTTP do endpoint \texttt {/questions/random} por nível de concorrência}}{59}{table.6.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Comparação de latência entre endpoints HTTP (n=60 reqs, sequencial)}}{60}{table.6.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces Latência de conexão e ingresso (\textit {join}) no Phoenix Channel por número de conexões simultâneas}}{61}{table.6.9}%

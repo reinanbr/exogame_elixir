@@ -14,5 +14,7 @@ defmodule BackendElixirWeb.Router do
 
     get "/questions", QuestionController, :index
     get "/questions/random", QuestionController, :random
+
+    get "/stats", StatsController, :index
   end
 end

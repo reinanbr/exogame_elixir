@@ -130,13 +130,17 @@ Para alterar o tempo padrão das perguntas, edite as perguntas em `backend/src/q
 
 ## 🚀 Deploy
 
-### Backend
-O backend pode ser deployado em qualquer serviço que suporte Node.js (Heroku, Vercel, DigitalOcean, etc.).
+O stack roda via Docker Compose: backend (Phoenix), frontend (Next.js) e um proxy nginx
+interno que expõe tudo em uma única porta.
 
-### Frontend
-O frontend pode ser deployado no Vercel, Netlify ou qualquer serviço que suporte Next.js.
+1. `cp .env.example .env` e preencha `DOMAIN`, `PROXY_PORT` e `SECRET_KEY_BASE`
+   (gere o secret com `cd backend_elixir && mix phx.gen.secret`).
+2. `docker compose up -d --build`.
+3. Aponte o nginx/certbot do host (fora deste compose) para `127.0.0.1:${PROXY_PORT}`.
 
-**⚠️ Importante**: Lembre-se de atualizar a URL do backend no frontend para a URL de produção.
+O proxy (`deploy/nginx/nginx.conf`) encaminha `/socket`, `/games`, `/questions` e `/stats`
+para o backend e todo o resto para o frontend, então ambos ficam na mesma origem
+(`https://${DOMAIN}`) — sem necessidade de CORS entre eles.
 
 ## 🐛 Solução de Problemas
 

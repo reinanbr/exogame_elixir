@@ -1,0 +1,8 @@
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Arquitetura escalável com Phoenix/PubSub para múltiplos nós Elixir}}{33}{figure.2.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Arquitetura geral da plataforma ExoGame}}{49}{figure.4.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Latência média e throughput por nível de concorrência HTTP}}{62}{figure.6.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Throughput (req/s) por nível de concorrência HTTP}}{62}{figure.6.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Latência de join no Phoenix Channel por número de conexões WebSocket simultâneas}}{63}{figure.6.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de fluxo de uma partida no ExoGame}}{77}{figure.B.6}%

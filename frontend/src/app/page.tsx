@@ -1,10 +1,10 @@
 'use client';
 
 import { useGame } from '@/contexts/GameContext';
-import HomePage from '@/components/HomePage';
-import Lobby from '@/components/Lobby';
-import QuestionView from '@/components/QuestionView';
-import Leaderboard from '@/components/Leaderboard';
+import HomePage from '@/components/screens/HomePage';
+import Lobby from '@/components/screens/Lobby';
+import QuestionView from '@/components/screens/QuestionView';
+import Leaderboard from '@/components/screens/Leaderboard';
 
 export default function Home() {
   const { game, currentQuestion, showingResults } = useGame();

@@ -2,6 +2,7 @@ defmodule BackendElixirWeb.GameController do
   use BackendElixirWeb, :controller
 
   alias BackendElixir.Game.Server, as: GameServer
+  alias BackendElixir.Game.Question
 
   def show(conn, %{"id" => id}) do
     case GameServer.get_game(id) do
@@ -28,9 +29,7 @@ defmodule BackendElixirWeb.GameController do
         |> json(%{error: "Pergunta não encontrada"})
 
       question ->
-        # Remove correct answer to avoid spoiling
-        safe_question = Map.drop(question, [:correctAnswer])
-        json(conn, safe_question)
+        json(conn, Question.strip_answer(question))
     end
   end
 end
