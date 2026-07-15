@@ -16,6 +16,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# public/ is gitignored (currently empty) so it may not exist on a fresh
+# checkout — guarantee it's there for the runner stage's COPY below.
+RUN mkdir -p public
+
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # NEXT_PUBLIC_* vars are inlined into the client bundle at build time, so
