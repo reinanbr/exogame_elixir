@@ -65,9 +65,11 @@ services:
           memory: 256M
     healthcheck:
       # node:22-alpine's runner stage doesn't ship wget (unlike the Elixir
-      # image), so probe with Node's own http client instead.
+      # image), so probe with Node's own http client instead. Next.js's
+      # standalone server binds 0.0.0.0 (IPv4-only) — "localhost" here can
+      # resolve to ::1 first and fail, so hit 127.0.0.1 explicitly.
       test: ["CMD", "node", "-e",
-             "require('http').get('http://localhost:3000', r => process.exit(r.statusCode < 500 ? 0 : 1)).on('error', () => process.exit(1))"]
+             "require('http').get('http://127.0.0.1:3000', r => process.exit(r.statusCode < 500 ? 0 : 1)).on('error', () => process.exit(1))"]
       interval: 15s
       timeout: 5s
       retries: 5
@@ -101,3 +103,4 @@ services:
 networks:
   exogame_net:
     driver: bridge
+
