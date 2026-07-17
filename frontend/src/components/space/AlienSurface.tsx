@@ -1,4 +1,5 @@
 import Starfield from '../shared/Starfield';
+import MarsRover from './MarsRover';
 
 export default function AlienSurface() {
   return (
@@ -92,6 +93,10 @@ export default function AlienSurface() {
           fill="url(#rock-near)"
         />
       </svg>
+
+      {/* rover and astronaut, crossing the ridge — in front of the content
+          card so the traverse stays visible for its whole crossing */}
+      <MarsRover className="bottom-[2vh] z-20" />
 
       {/* about content, standing on the alien ground */}
       <div className="relative z-20 flex items-end justify-center min-h-screen px-4 pb-16 pt-32">

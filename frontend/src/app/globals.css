@@ -177,10 +177,12 @@ body {
 
 /* Alien surface: night-time elements (stars, nebulae, giant planet, moon glow)
    fade out as the twin suns rise, then fade back in as they set. All share
-   this same timeline so they move together. */
+   this same timeline so they move together. The fade starts a bit before the
+   suns actually crest the horizon (they appear at 22% in suns-arc), so the
+   sky's tone is already shifting by the time they show up, like a real dawn. */
 @keyframes surface-night-fade {
   0%,
-  22% {
+  8% {
     opacity: 1;
   }
   40%,
@@ -193,13 +195,13 @@ body {
   }
 }
 .animate-surface-night {
-  animation: surface-night-fade 26s ease-in-out infinite;
+  animation: surface-night-fade 34s ease-in-out infinite;
 }
 
 /* Inverse of the above: the sky itself brightening into day */
 @keyframes surface-day-fade {
   0%,
-  22% {
+  8% {
     opacity: 0;
   }
   40%,
@@ -212,7 +214,7 @@ body {
   }
 }
 .animate-surface-day {
-  animation: surface-day-fade 26s ease-in-out infinite;
+  animation: surface-day-fade 34s ease-in-out infinite;
 }
 
 /* Twin suns: rise together over the horizon on one side, arc up across the
@@ -291,7 +293,7 @@ body {
 }
 .animate-suns-arc {
   animation-name: suns-arc;
-  animation-duration: 26s;
+  animation-duration: 34s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -311,4 +313,57 @@ body {
 }
 .animate-moon-drift {
   animation: moon-drift 48s ease-in-out infinite alternate;
+}
+
+/* Rover + astronaut traversing the alien surface: a slow horizontal crossing
+   of the whole scene, with a quicker independent bob layered on top for the
+   jostle of driving/walking over rocky ground. */
+@keyframes rover-cross {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 115%;
+  }
+}
+.animate-rover-cross {
+  animation: rover-cross 60s linear infinite;
+}
+
+@keyframes rover-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+.animate-rover-bob {
+  animation: rover-bob 0.5s ease-in-out infinite;
+}
+
+@keyframes wheel-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-wheel-spin {
+  animation: wheel-spin 1s linear infinite;
+}
+
+/* Shared by the astronaut's legs and arms; each instance supplies its own
+   transform-origin (the joint) and a negative animation-delay on one side of
+   each pair so left/right swing out of phase, like a walking gait. */
+@keyframes walk-swing {
+  0%,
+  100% {
+    transform: rotate(-18deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+.animate-walk-swing {
+  animation: walk-swing 0.6s ease-in-out infinite;
 }

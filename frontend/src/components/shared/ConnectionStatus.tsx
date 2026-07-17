@@ -1,9 +1,11 @@
 'use client';
 
 import { useGame } from '@/contexts/GameContext';
+import { getPingColor } from '@/lib/constants';
 
 export default function ConnectionStatus() {
   const { isConnected, stats, pingMs } = useGame();
+  const pingColor = getPingColor(pingMs);
 
   return (
     <div className="fixed bottom-4 left-4 z-30 glass-panel rounded-2xl px-4 py-3 pointer-events-none select-none">
@@ -13,10 +15,13 @@ export default function ConnectionStatus() {
           <div className="flex flex-col gap-1">
             <div className="flex items-center gap-1.5">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                <span
+                  className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
+                  style={{ backgroundColor: pingColor }}
+                />
+                <span className="relative inline-flex h-2 w-2 rounded-full" style={{ backgroundColor: pingColor }} />
               </span>
-              <span className="text-xs font-semibold text-emerald-300">
+              <span className="text-xs font-semibold" style={{ color: pingColor }}>
                 Conectado à base{pingMs !== null ? ` (${pingMs}ms)` : ''}
               </span>
             </div>

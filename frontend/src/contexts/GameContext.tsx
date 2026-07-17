@@ -38,18 +38,30 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   const [stats, setStats] = useState<Stats | null>(null);
   const [pingMs, setPingMs] = useState<number | null>(null);
 
+  // player is a snapshot taken at gameJoined/gameCreated; reconcile its score
+  // with fresher player lists (leaderboard/game.players) whenever they arrive.
+  const syncPlayer = useCallback((players: Player[]) => {
+    setPlayer((prev) => {
+      if (!prev) return prev;
+      const updated = players.find((p) => p.id === prev.id);
+      return updated ? updated : prev;
+    });
+  }, []);
+
   // Join a game-specific channel to receive broadcasts
   const joinGameChannel = useCallback((gameId: string) => {
     if (!socketRef.current) return;
 
     const gameChannel = socketRef.current.channel(`game:${gameId}`, {});
-    
+
     gameChannel.on('playerJoined', (data: PlayerJoinedPayload) => {
       setGame(data.game);
+      syncPlayer(data.game.players);
     });
 
     gameChannel.on('playerLeft', (data: PlayerLeftPayload) => {
       setGame(data.game);
+      syncPlayer(data.game.players);
     });
 
     gameChannel.on('gameStarted', (data: GameQuestionPayload) => {
@@ -58,6 +70,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       setLeaderboard([]);
       setShowingResults(false);
       setAnswerStats(null);
+      syncPlayer(data.game.players);
     });
 
     gameChannel.on('nextQuestion', (data: GameQuestionPayload) => {
@@ -67,6 +80,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       setLeaderboard([]);
       setShowingResults(false);
       setAnswerStats(null);
+      syncPlayer(data.game.players);
     });
 
     gameChannel.on('answerStatsUpdated', (data: AnswerStatsUpdatedPayload) => {
@@ -79,12 +93,14 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       setCurrentQuestion(data.question);
       setLeaderboard(data.leaderboard);
       setShowingResults(true);
+      syncPlayer(data.leaderboard);
     });
 
     gameChannel.on('gameFinished', (data: GameFinishedPayload) => {
       setGame(data.game);
       setLeaderboard(data.leaderboard);
       setCurrentQuestion(null);
+      syncPlayer(data.leaderboard);
     });
 
     gameChannel.join()
@@ -96,7 +112,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       });
 
     return gameChannel;
-  }, []);
+  }, [syncPlayer]);
 
   useEffect(() => {
     const socketUrl = process.env.NEXT_PUBLIC_PHOENIX_URL ?? 'ws://localhost:3001/socket';
