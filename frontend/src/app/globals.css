@@ -367,3 +367,41 @@ body {
 .animate-walk-swing {
   animation: walk-swing 0.6s ease-in-out infinite;
 }
+
+/* Star Wars-style opening crawl, used by the /references page. The track
+   starts below the viewport (top: 100%) and translates straight up; rotateX
+   is baked into every keyframe (rather than animated on its own) so the 3D
+   tilt stays constant while only the vertical position changes. Distance and
+   duration come in as CSS custom properties set from JS, since they depend
+   on the rendered content's height. */
+.sw-crawl-viewport {
+  perspective: 300px;
+  perspective-origin: 50% 100%;
+}
+
+.sw-crawl-track {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transform-origin: 50% 0%;
+  animation: sw-crawl-move linear forwards;
+  animation-duration: var(--sw-duration, 90s);
+  will-change: transform;
+}
+
+@keyframes sw-crawl-move {
+  from {
+    transform: rotateX(28deg) translateY(0);
+  }
+  to {
+    transform: rotateX(28deg) translateY(calc(-1 * var(--sw-distance, 4000px)));
+  }
+}
+
+/* Fades the crawl to black near the top of the viewport, so text recedes
+   into the distance instead of clipping abruptly. */
+.sw-crawl-fade {
+  mask-image: linear-gradient(to top, black 0%, black 55%, transparent 92%);
+  -webkit-mask-image: linear-gradient(to top, black 0%, black 55%, transparent 92%);
+}

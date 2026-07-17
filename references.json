@@ -1,0 +1,965 @@
+% ======================================================================
+% ExoGame - Referências Bibliográficas 
+% ======================================================================
+
+@book{alves2015,
+  Author    = {Flora Alves},
+  Title     = {Gamification: como criar experiências de aprendizagem engajadoras},
+  Publisher = {DVS Editora},
+  Address   = {São Paulo},
+  Year      = {2015},
+  Edition   = {2},
+  ISBN      = {978-85-8289-102-5}
+}
+
+@book{sagan1980,
+  author    = {Sagan, Carl},
+  title     = {Cosmos},
+  year      = {1980},
+  publisher = {Random House},
+  address   = {New York}
+}
+
+
+
+@mastersthesis{bretones1999,
+  Author = {Paulo Sergio Bretones},
+  Title = {Disciplinas introdut{\'o}rias de astronomia nos cursos superiores do {Brasil}},
+  School = {Universidade Estadual de Campinas},
+  Address = {Campinas},
+  Year = {1999}
+}
+
+
+@book{bruno1584,
+  Author = {Giordano Bruno},
+  Title = {De l'Infinito, Universo e Mondi},
+  Year = {1584},
+  Publisher = {[s.n.]},
+  Address = {Veneza},
+  Note = {Publicado originalmente em italiano em 1584}
+}
+
+@incollection{busarello2014,
+  Author    = {Raul Inácio Busarello and Luciane Maria Fadel and Vania Ribas Ulbricht},
+  Title     = {A gamificação e a sistemática de jogo: conceitos sobre a gamificação
+               como recurso motivacional},
+  Booktitle = {Gamificação na educação},
+  Editor    = {Andreza Regina Lopes da Silva and others},
+  Publisher = {Pimenta Cultural},
+  Address   = {São Paulo},
+  Year      = {2014},
+  Pages     = {11--37}
+}
+
+@article{deterding2011,
+  Author = {Sebastian Deterding and Dan Dixon and Rilla Khaled and Lennart Nacke},
+  Title = {From Game Design Elements to Gamefulness: Defining ``Gamification''},
+  Journal = {Proceedings of the 15th International Academic MindTrek Conference: Envisioning Future Media Environments},
+  Year = {2011},
+  Pages = {9--15},
+  Publisher = {ACM},
+  Address = {New York},
+  DOI = {10.1145/2181037.2181040}
+}
+
+@book{dick1982,
+  Author = {Steven J. Dick},
+  Title = {Plurality of Worlds: The Origins of the Extraterrestrial Life Debate from Democritus to Kant},
+  Publisher = {Cambridge University Press},
+  Address = {Cambridge},
+  Year = {1982},
+  ISBN = {978-0521319850}
+}
+
+@incollection{fadel2014,
+  Author    = {Luciane Maria Fadel and Vania Ribas Ulbricht},
+  Title     = {Educação gamificada: valorizando os aspectos sociais},
+  Booktitle = {Gamificação na educação},
+  Editor    = {Andreza Regina Lopes da Silva and others},
+  Publisher = {Pimenta Cultural},
+  Address   = {São Paulo},
+  Year      = {2014},
+  Pages     = {1--30}
+}
+
+@book{harari2015,
+  Author    = {Yuval Noah Harari},
+  Title     = {Sapiens: Uma Breve Hist{\'o}ria da Humanidade},
+  Publisher = {L\&PM},
+  Address   = {Porto Alegre},
+  Year      = {2015},
+  ISBN      = {978-8525432186},
+  Note      = {Tradu{\c{c}}{\~a}o de Janaina Marcoantonio}
+}
+
+@phdthesis{langhi2009tese,
+  Author = {Rodolfo Langhi},
+  Title = {Astronomia nos anos iniciais do ensino fundamental: repensando a forma{\c{c}}{\~a}o de professores},
+  School = {Universidade Estadual Paulista},
+  Address = {Bauru},
+  Year = {2009}
+}
+
+@article{langhi2009,
+  Author = {Rodolfo Langhi and Roberto Nardi},
+  Title = {Ensino da astronomia no {B}rasil: educa{\c c}{\~a}o formal, informal, n{\~a}o formal e divulga{\c c}{\~a}o cient{\'\i}fica},
+  Journal = {Revista Brasileira de Ensino de F{\'\i}sica},
+  Volume = {31},
+  Number = {4},
+  Pages = {4402-1--4402-11},
+  Year = {2009},
+  Publisher = {Sociedade Brasileira de F{\'\i}sica},
+  DOI = {10.1590/S1806-11172009000400014}
+}
+
+@inproceedings{licorish2018,
+  Author = {Sherlock A. Licorish and Helen E. Owen and Ben Daniel and Jade Li George},
+  Title = {Students' perception of {Kahoot!}'s influence on teaching and learning},
+  Booktitle = {Research and Practice in Technology Enhanced Learning},
+  Volume = {13},
+  Number = {9},
+  Pages = {1--23},
+  Year = {2018},
+  DOI = {10.1186/s41039-018-0078-8}
+}
+
+@inproceedings{machado2023,
+  Author    = {Alex Pereira Machado and Guilherme Ribeiro Rostas and Tauã Milech Cabreira},
+  Title     = {Gamificação na Educação Básica: uma revisão sistemática do cenário nacional},
+  Booktitle = {Anais do Simpósio Brasileiro de Informática na Educação (SBIE)},
+  Year      = {2023},
+  Pages     = {738--751},
+  Publisher = {Sociedade Brasileira de Computação},
+  Address   = {Passo Fundo/RS},
+  DOI       = {10.5753/sbie.2023.234744}
+}
+
+@article{mayor1995,
+  Author = {Michel Mayor and Didier Queloz},
+  Title = {A Jupiter-mass companion to a solar-type star},
+  Journal = {Nature},
+  Volume = {378},
+  Pages = {355--359},
+  Year = {1995},
+  DOI = {10.1038/378355a0}
+}
+
+@article{nardi2005,
+  Author = {Roberto Nardi},
+  Title = {Mem{\'o}rias da educa{\c{c}}{\~a}o em ci{\^e}ncias no {Brasil}: a pesquisa em ensino de f{\'i}sica},
+  Journal = {Investiga{\c{c}}{\~o}es em Ensino de Ci{\^e}ncias},
+  Volume = {10},
+  Number = {1},
+  Pages = {63--101},
+  Year = {2005}
+}
+
+@misc{nasaexoplanet2024,
+  Author = {{NASA Exoplanet Archive}},
+  Title = {{NASA} Exoplanet Archive},
+  Year = {2024},
+  Howpublished = {Dispon{\'\i}vel em: \url{https://exoplanetarchive.ipac.caltech.edu/}},
+  Urlaccessdate = {15 jan. 2026}
+}
+
+@article{sailer2017,
+  Author = {Michael Sailer and Jan Ulrich Hense and Sarah Katharina Mayr and Heinz Mandl},
+  Title = {How gamification motivates: An experimental study of the effects of specific game design elements on psychological need satisfaction},
+  Journal = {Computers in Human Behavior},
+  Volume = {69},
+  Pages = {371--380},
+  Year = {2017},
+  Publisher = {Elsevier},
+  DOI = {10.1016/j.chb.2016.12.033}
+}
+
+@book{seager2010,
+  Author = {Sara Seager},
+  Title = {Exoplanet Atmospheres: Physical Processes},
+  Publisher = {Princeton University Press},
+  Address = {Princeton},
+  Year = {2010},
+  ISBN = {978-0691125855}
+}
+
+@book{singer1950,
+  Author = {Dorothea Waley Singer},
+  Title = {Giordano Bruno: His Life and Thought},
+  Publisher = {Henry Schuman},
+  Address = {New York},
+  Year = {1950}
+}
+
+@article{tolomei2017,
+  Author    = {Bianca Vargas Tolomei},
+  Title     = {A gamificação como estratégia de engajamento e motivação na educação},
+  Journal   = {EaD em Foco},
+  Volume    = {7},
+  Number    = {2},
+  Pages     = {145--156},
+  Year      = {2017},
+  DOI       = {10.18264/eadf.v7i2.440}
+}
+
+@book{vianna2013,
+  Author    = {Ysmar Vianna and Maurício Vianna and Bruno Medina and Samara Tanaka},
+  Title     = {Gamification, {Inc.}: como reinventar empresas a partir de jogos},
+  Publisher = {MJV Press},
+  Address   = {Rio de Janeiro},
+  Year      = {2013},
+  ISBN      = {978-85-65424-09-7}
+}
+
+@article{wang2020kahoot,
+  Author = {Alf Inge Wang and Rabail Tahir},
+  Title = {The Effect of Using {Kahoot!} for Learning -- A Literature Review},
+  Journal = {Computers \& Education},
+  Volume = {149},
+  Pages = {103818},
+  Year = {2020},
+  Publisher = {Elsevier},
+  DOI = {10.1016/j.compedu.2020.103818}
+}
+
+
+%==========================
+C A P I T U L O  -  2
+%==========================
+@book{kapp2012,
+  Author = {Karl M. Kapp},
+  Title = {The Gamification of Learning and Instruction: Game-based Methods and Strategies for Training and Education},
+  Publisher = {Pfeiffer},
+  Address = {San Francisco},
+  Year = {2012},
+  Pages = {336},
+  ISBN = {978-1118096345}
+}
+
+@article{guimaraes2004,
+  Author = {Sueli {\'E}di Rufini Guimar{\~a}es and Evely Boruchovitch},
+  Title = {O Estilo Motivacional do Professor e a Motiva{\c c}{\~a}o Intr{\'i}nseca dos Estudantes: Uma Perspectiva da Teoria da Autodetermina{\c c}{\~a}o},
+  Journal = {Psicologia: Reflex{\~a}o e Cr{\'i}tica},
+  Volume = {17},
+  Number = {2},
+  Pages = {143--150},
+  Year = {2004},
+  Publisher = {UFRGS},
+  DOI = {10.1590/S0102-79722004000200002}
+}
+
+@article{csikszentmihalyi1990,
+  Author = {Mihaly Csikszentmihalyi},
+  Title = {Flow: The Psychology of Optimal Experience},
+  Publisher = {Harper \& Row},
+  Address = {New York},
+  Year = {1990},
+  ISBN = {978-0060920432}
+}
+
+@book{vygotsky1984,
+  Author = {Lev Semyonovich Vygotsky},
+  Title = {A forma{\c c}{\~a}o social da mente: o desenvolvimento dos processos psicol{\'o}gicos superiores},
+  Publisher = {Martins Fontes},
+  Address = {S{\~a}o Paulo},
+  Year = {1984},
+  Note = {Tradu{\c c}{\~a}o de Jos{\'e} Cipolla Neto, Luis Silveira Menna Barreto e Solange Castro Afeche}
+}
+
+
+@book{papert1985,
+  Author = {Seymour Papert},
+  Title = {Logo: Computadores e Educa{\c c}{\~a}o},
+  Publisher = {Brasiliense},
+  Address = {S{\~a}o Paulo},
+  Year = {1985},
+  Note = {Tradu{\c c}{\~a}o de Jos{\'e} Armando Valente, Beatriz Cavalheiro e outros}
+}
+ 
+
+@book{papert1994,
+  Author = {Seymour Papert},
+  Title = {A M{\'a}quina das Crian{\c c}as: Repensando a Escola na Era da Inform{\'a}tica},
+  Publisher = {Artes M{\'e}dicas},
+  Address = {Porto Alegre},
+  Year = {1994},
+  Note = {Tradu{\c c}{\~a}o de Sandra Costa}
+}
+
+@book{papert1980,
+  Author    = {Seymour Papert},
+  Title     = {Mindstorms: Children, Computers, and Powerful Ideas},
+  Publisher = {Basic Books},
+  Address   = {New York},
+  Year      = {1980},
+  ISBN      = {978-0465046744}
+}
+
+
+
+
+@article{fardo2013,
+  Author  = {Marcelo Luis Fardo},
+  Title   = {A gamificação aplicada em ambientes de aprendizagem},
+  Journal = {RENOTE -- Revista Novas Tecnologias na Educação},
+  Volume  = {11},
+  Number  = {1},
+  Year    = {2013},
+  Publisher = {CINTED/UFRGS},
+  Address   = {Porto Alegre}
+}
+
+
+
+@article{silva2019,
+  Author  = {João Batista da Silva and Gilvandenys Leite Sales and Juscileide Braga de Castro},
+  Title   = {Gamificação como estratégia de aprendizagem ativa no ensino de {F}ísica},
+  Journal = {Revista Brasileira de Ensino de Física},
+  Volume  = {41},
+  Number  = {4},
+  Year    = {2019},
+  DOI     = {10.1590/1806-9126-rbef-2018-0309}
+}
+
+% --- Gamificação no contexto web e plataformas digitais ---
+
+@article{silva2018kahoot,
+  Author  = {João Batista da Silva and Maria Helena Andrade
+             and Rannyelly Rodrigues de Oliveira
+             and Gilvandenys Leite Sales
+             and Francisco Regis Vieira Alves},
+  Title   = {Tecnologias digitais e metodologias ativas na escola:
+             o contributo do {Kahoot} para gamificar a sala de aula},
+  Journal = {Revista Thema},
+  Volume  = {15},
+  Number  = {2},
+  Pages   = {780--791},
+  Year    = {2018},
+  DOI     = {10.15536/thema.15.2018.780-791.838}
+}
+
+
+
+@article{souza2025plataformas,
+  Author  = {Natasha Silva de Souza and Simone Renata Santos Freitas
+             and Marcela Ramos Silva Pereira
+             and Viviane Carvalho da Silva
+             and Renato Carlos de Oliveira},
+  Title   = {Plataformas educacionais digitais: uma revisão sistemática
+             sobre a gamificação aplicada na educação básica},
+  Journal = {Caderno Pedagógico},
+  Year    = {2025},
+  DOI     = {10.54033/cadped.v22i1.16556}
+}
+
+@book{mattar2010,
+  Author    = {João Mattar},
+  Title     = {Games em educação: como os nativos digitais aprendem},
+  Publisher = {Pearson Prentice Hall},
+  Address   = {São Paulo},
+  Year      = {2010}
+}
+
+
+@monography{carvalho2021gamificacao,
+  author      = {Fabrício Luís de Caravalho Espedito},
+  title       = {A Gamificação no Ensino de Astronomia nos Anos Finais e na EJA do Ensino Fundamental: Uma Estratégia para a Aprendizagem Significativa},
+  year        = {2021},
+  school      = {UEFS},
+  address     = {Feira de Santana - Bahia},
+  type        = {Trabalho de Conclusão de Curso},
+}
+
+@monografia{ferreira2025,
+  author      = {Ferreira, João Marcos Costa},
+  title       = {Cosmonauta: uma proposta de arquitetura conceitual para um 
+                 sistema educacional mobile com gamificação e repetição espaçada 
+                 para o ensino de Astronomia e Astronáutica},
+  year        = {2025},
+  pages       = {64},
+  type        = {Monografia (Bacharelado em Ciência da Computação)},
+  school      = {Universidade Estadual do Piauí},
+  address     = {Teresina}
+}
+
+@article{rodrigues2015estudo,
+  title={UM ESTUDO DA INFLU{\^E}NCIA DO MISTICISMO NA HIST{\'O}RIA DA CI{\^E}NCIA.},
+  author={RODRIGUES, MARCEL HENRIQUE},
+  journal={Impulso},
+  volume={25},
+  number={64},
+  year={2015}
+}
+
+@article{dittz2021astronomia,
+  title={Astronomia e astrologia: a constru{\c{c}}{\~a}o do conhecimento do cosmos},
+  author={Dittz, Roberta Moreira},
+  journal={Trabalho de conclus{\~a}o de curso (Bacharelado em Astronomia)-Observat{\'o}rio do Valongo, Universidade Federal do Rio de Janeiro, Rio de Janeiro},
+  year={2021}
+}
+
+@book{sagan1994,
+  author    = {Sagan, Carl},
+  title     = {Pale Blue Dot: A Vision of the Human Future in Space},
+  year      = {1994},
+  publisher = {Random House},
+  address   = {New York}
+}
+
+@article{bartelmebs2012contribuiccoes,
+  title={As contribui{\c{c}}{\~o}es do construtivismo para o ensino de astronomia nos anos iniciais},
+  author={Bartelmebs, Roberta Chiesa and Moraes, Roque},
+  journal={Sch{\`e}me: Revista Eletr{\^o}nica de Psicologia e Epistemologia Gen{\'e}ticas},
+  volume={4},
+  number={2},
+  pages={73--90},
+  year={2012}
+}
+@article{gil2015efeitos,
+  title={Efeitos de um programa de estimula{\c{c}}{\~a}o cognitiva multidisciplinar intergeracional},
+  author={Gil, Gislaine and Busse, Alexandre Leopold and Shoji, Fabiana Tintori and Martinelli, Patr{\'\i}cia Dancieri and Mercadante, Elisabeth Frohlich},
+  journal={Revista Brasileira de Geriatria e Gerontologia},
+  volume={18},
+  pages={533--543},
+  year={2015},
+  publisher={SciELO Brasil}
+}
+
+@article{rodrigues2019ensino,
+  title={O ensino de astronomia e as poss{\'\i}veis rela{\c{c}}{\~o}es com o processo de alfabetiza{\c{c}}{\~a}o cient{\'\i}fica},
+  author={Rodrigues, F{\'a}bio Matos and Briccia, Viviane},
+  journal={Revista Latino-Americana de Educa{\c{c}}{\~a}o em Astronomia},
+  number={28},
+  pages={95--111},
+  year={2019}
+}
+
+@article{lattari1999metodologia,
+  title={Metodologia para o Ensino de Astronomia: uma abordagem construtivista},
+  author={Lattari, Cleiton Joni Benetti and Trevisan, Rute Helena},
+  journal={Atas do II Encontro Nacional de Pesquisa em Educa{\c{c}}{\~a}o em Ci{\^e}ncias. Valinhos, SP: ABRAPEC},
+  year={1999}
+}
+
+@article{afonso2022astronomia,
+  title={Astronomia na cultura ind{\'\i}gena para a educa{\c{c}}{\~a}o},
+  author={Afonso, Germano Bruno and Da Silva, Paulo Souza and Afonso, Yuri Berr{\'\i}},
+  journal={Interfaces da Educa{\c{c}}{\~a}o},
+  volume={13},
+  number={37},
+  year={2022}
+}
+
+@book{sagan2019palido,
+  title={P{\'a}lido ponto azul: uma vis{\~a}o do futuro da humanidade no espa{\c{c}}o},
+  author={Sagan, Carl},
+  year={2019},
+  publisher={Companhia das Letras}
+}
+
+@phdthesis{kantor2012educaccao,
+  title={Educa{\c{c}}{\~a}o em Astronomia sob uma perspectiva human{\'\i}stico-cient{\'\i}fica: a compreens{\~a}o do c{\'e}u como espelho da evolu{\c{c}}{\~a}o cultural},
+  author={Kantor, Carlos Aparecido},
+  year={2012},
+  school={Universidade de S{\~a}o Paulo}
+}
+
+@article{da2025contribuiccoes,
+  title={Contribui{\c{c}}{\~o}es de um curso sobre Mitologia Grega e Educa{\c{c}}{\~a}o em Astronomia {\`a} forma{\c{c}}{\~a}o docente numa perspectiva freiriana},
+  author={da Fonseca, Marcos Orso and Batista, Michel Corci and Maciel, Felippe Guimar{\~a}es and Ferreira, Marcello},
+  journal={Revista Internacional de Pesquisa em Did{\'a}tica das Ci{\^e}ncias e Matem{\'a}tica},
+  pages={e025002--e025002},
+  year={2025}
+}
+
+@article{ovigli2014diferentes,
+  title={As diferentes culturas na educa{\c{c}}{\~a}o em astronomia e seus significados em sala de aula},
+  author={Ovigli, Daniel Fernando Bovolenta and de Barros, Vicente},
+  journal={Revista Latino Americana De Educacao Em Astronomia},
+  year={2014}
+}
+
+@phdthesis{conte2025historia,
+  title={Uma hist{\'o}ria da astronomia a partir dos desenvolvimentos tecnol{\'o}gicos},
+  author={Conte, Francisco Antonio de Azevedo},
+  year={2025},
+  school={Universidade de S{\~a}o Paulo}
+}
+
+@inproceedings{siemsen2019ensino,
+  title={O ensino de astronomia em uma abordagem interdisciplinar no ensino m{\'e}dio: Potencialidades para a promo{\c{c}}{\~a}o da alfabetiza{\c{c}}{\~a}o cient{\'\i}fica e tecnol{\'o}gica},
+  author={SIEMSEN, Giselle Henequin and Lorenzetti, Leonir},
+  booktitle={VIII Workshop do Programa de P{\'o}s-gradua{\c{c}}{\~a}o em Educa{\c{c}}{\~a}o em Ci{\^e}ncias e em Matem{\'a}tica},
+  pages={10},
+  year={2019}
+}
+
+
+@article{lins2013evoluccao,
+  title={A evolu{\c{c}}{\~a}o da Internet: uma perspectiva hist{\'o}rica},
+  author={Lins, Bernardo Felipe Estellita},
+  journal={Cadernos Aslegis},
+  volume={48},
+  pages={11--45},
+  year={2013},
+  publisher={n}
+}
+
+
+@article{kenski2015educaccao,
+  title={Educa{\c{c}}{\~a}o e internet no Brasil},
+  author={Kenski, Vani Moreira},
+  journal={Cad Adenauer},
+  volume={16},
+  number={3},
+  pages={133--150},
+  year={2015}
+}
+
+
+@article{levy1999ciberespai,
+  title={Ciberespai i cibercultura},
+  author={L{\'e}vy, Pierre},
+  journal={Digithum},
+  number={1},
+  year={1999}
+}
+
+@inproceedings{beutler2015complexidades,
+  title={As complexidades da cibercultura em Pierre L{\'e}vy e seus desdobramentos sobre a educa{\c{c}}{\~a}o},
+  author={Beutler, D{\'a}rio and Teixeira, Adriano},
+  booktitle={Anais do Workshop de Inform{\'a}tica na Escola},
+  volume={21},
+  number={1},
+  pages={514--523},
+  year={2015}
+}
+
+@article{spizzirri2012adolescencia,
+  title={Adolesc{\^e}ncia conectada: Mapeando o uso da internet em jovens internautas},
+  author={Spizzirri, Rosane Cristina Pereira and Wagner, Adriana and Mosmann, Clarisse Pereira and Armani, Ananda Borgert},
+  journal={Psicologia Argumento},
+  volume={30},
+  number={69},
+  year={2012}
+}
+
+@article{massa2022construcionismo,
+  title={O construcionismo de Seymour Papert e os computadores na educa{\c{c}}{\~a}o},
+  author={Massa, Nayara Poliana and De Oliveira, Guilherme Saramago and dos Santos, Josely Alves},
+  journal={Cadernos da FUCAMP},
+  volume={21},
+  number={52},
+  year={2022}
+}
+
+@article{ostermann2011teorias,
+  title={Teorias de aprendizagem},
+  author={Ostermann, Fernanda and Cavalcanti, Claudio Jose de Holanda},
+  year={2011},
+  publisher={Evangraf}
+}
+
+@book{baum2018compreender,
+  title={Compreender o Behaviorismo-: Comportamento, Cultura e Evolu{\c{c}}{\~a}o},
+  author={Baum, William M},
+  year={2018},
+  publisher={Artmed Editora}
+}
+
+@article{menezes2014reforcco,
+  title={Refor{\c{c}}o e recompensa: a Gamifica{\c{c}}{\~a}o tratada sob uma abordagem behaviorista},
+  author={Menezes, Graciela Sardo and Tarachucky, Laryssa and Pellizzoni, Roger Costa and Perassi, Richard L and Gon{\c{c}}alves, Mar{\'\i}lia Matos and Gomez, Luiz Salom{\~a}o Ribas and Fialho, Francisco Antonio Pereira},
+  journal={Projetica},
+  volume={5},
+  number={2},
+  pages={9--18},
+  year={2014}
+}
+
+@article{primo2013conhecimento,
+  title={Conhecimento e intera{\c{c}}{\~a}o: fronteiras entre o agir humano e intelig{\^e}ncia artificial},
+  author={Primo, Al{\^e}},
+  journal={Olhares sobre a cibercultura},
+  year={2013}
+}
+
+@book{nicola2005antologia,
+  title={Antologia ilustrada de filosofia: das origens {\`a} idade moderna},
+  author={Nicola, Ubaldo},
+  year={2005},
+  publisher={Globo}
+}
+
+@article{souza1991debate,
+  title={O debate Piaget/Vygotsky e as pol{\'\i}ticas educacionais},
+  author={Souza, Solange Jobim and Kramer, Sonia},
+  journal={Cadernos de pesquisa},
+  number={77},
+  pages={69--81},
+  year={1991}
+}
+
+@article{dias2010desenvolvimento,
+  title={O desenvolvimento cognitivo no processo de aquisi{\c{c}}{\~a}o de linguagem},
+  author={Dias, Fernanda},
+  journal={Letr{\^o}nica},
+  volume={3},
+  number={2},
+  pages={107--119},
+  year={2010}
+}
+
+@article{morais2015teorias,
+  title={Teorias de Aprendizagem e Arquiteturas Pedag{\'o}gicas: a rela{\c{c}}{\~a}o entre ambas no ensino a dist{\^a}ncia},
+  author={Morais, Leonardo},
+  journal={EAD em Foco},
+  volume={5},
+  number={1},
+  year={2015}
+}
+
+@book{cosenza2009neurociencia,
+  title={Neuroci{\^e}ncia e educa{\c{c}}{\~a}o},
+  author={Cosenza, Ramon and Guerra, Leonor},
+  year={2009},
+  publisher={Artmed Editora}
+}
+
+@book{papert1994maquina,
+  title={A m{\'a}quina das crian{\c{c}}as: repensando a escola na era da inform{\'a}tica},
+  author={Papert, Seymour},
+  year={1994}
+}
+
+@article{de2010intimo,
+  title={O {\'I}NTIMO E O INFINITO O UNIVERSO DAS CI{\^E}NCIAS E O COSMOS DAS RELIGI{\~O}ES},
+  author={de Miranda, Evaristo Eduardo},
+  year={2010}
+}
+
+
+
+@article{campagnolo2011carater,
+  title={O car{\'a}ter incentivador das olimp{\'\i}adas de conhecimento: uma an{\'a}lise sobre a vis{\~a}o dos alunos da Olimp{\'\i}ada Brasileira de Astronomia e Astron{\'a}utica Sobre a Olimp{\'\i}ada},
+  author={Campagnolo, Julio Cesar Neves},
+  journal={Monografia, Universidade Estadual de Maring{\'a}},
+  year={2011}
+}
+
+@article{langhi2005,
+  author  = {Langhi, Rodolfo and Nardi, Roberto},
+  title   = {Dificuldades interpretadas nos discursos de professores dos anos iniciais do Ensino Fundamental em rela\c{c}\~ao ao ensino da Astronomia},
+  journal = {Revista Latino-Americana de Educa\c{c}\~ao em Astronomia (RELEA)},
+  number  = {2},
+  pages   = {75--92},
+  year    = {2005},
+  doi     = {10.37156/RELEA/2005.02.075}
+}
+
+@article{langhi2009ensino,
+  title={Ensino da astronomia no Brasil: educa{\c{c}}{\~a}o formal, informal, n{\~a}o formal e divulga{\c{c}}{\~a}o cient{\'\i}fica},
+  author={Langhi, Rodolfo and Nardi, Roberto},
+  journal={Revista Brasileira de Ensino de F{\'\i}sica},
+  volume={31},
+  pages={4402--4412},
+  year={2009},
+  publisher={SciELO Brasil}
+}
+
+@article{langhi2014,
+  author  = {Langhi, Rodolfo and Nardi, Roberto},
+  title   = {Justificativas para o ensino de Astronomia: o que dizem os pesquisadores brasileiros?},
+  journal = {Revista Brasileira de Pesquisa em Educa\c{c}\~ao em Ci\^encias (RBPEC)},
+  volume  = {14},
+  number  = {3},
+  pages   = {41--59},
+  year    = {2014}
+}
+
+
+
+@article{canallerelatorio,
+  title={Relat{\'o}rio da III Olimp{\'\i}ada Brasileira de Astronomia},
+  author={Canalle, Jo{\~a}o Batista Garcia and Lavouras, Daniel Fonseca and J{\'u}nior, Eug{\^e}nio Scalise and Afonso, Germano Bruno}
+}
+
+
+
+@article{erthal2019vinte,
+  title={Vinte anos de oba: uma an{\'a}lise da Evolu{\c{c}}{\~a}o do exame ao longo dos anos},
+  author={Erthal, Jo{\~a}o Paulo Casaro and da Silva Vieira, Andriele},
+  journal={Revista Latino-Americana de Educa{\c{c}}{\~a}o em Astronomia},
+  number={27},
+  pages={35--54},
+  year={2019}
+}
+
+
+@article{solomon2020history,
+  title={History of logo},
+  author={Solomon, Cynthia and Harvey, Brian and Kahn, Ken and Lieberman, Henry and Miller, Mark L and Minsky, Margaret and Papert, Artemis and Silverman, Brian},
+  journal={Proceedings of the ACM on Programming Languages},
+  volume={4},
+  number={HOPL},
+  pages={1--66},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{freitas2021reinventando,
+  title={Reinventando o m{\'e}todo de Aristarco},
+  author={Freitas, Lucas V and Santucci, Rafael M and Marques, Ivo A},
+  journal={Revista Brasileira de Ensino de F{\'\i}sica},
+  volume={43},
+  pages={e20210062},
+  year={2021},
+  publisher={SciELO Brasil}
+}
+
+@article{diaz2023calcular,
+  title={Calcular el radio de la tierra: emulando a Erat{\'o}stenes},
+  author={D{\'\i}az-Pinz{\'o}n, Jorge Enrique and others},
+  journal={Revista de Investigaciones Universidad del Quind{\'\i}o},
+  volume={35},
+  number={1},
+  pages={102--111},
+  year={2023}
+}
+
+@article{tortprecessao,
+  title={A precessao do Peri{\'e}lio de Mercurio e a Teoria da Relatividade Geral},
+  author={Tort, Alexandre Carlos},
+  year={2010},
+  publisher={Universidade Federal do Rio de Janeiro}
+}
+
+@article{demedindo,
+  title={MEDINDO A DIST{\^A}NCIA DA TERRA {\`A} LUA: UMA PROPOSTA FACT{\'I}VEL PARA O ENSINO M{\'E}DIO},
+  author={de Carvalho Neto, Jo{\~a}o Teles and Garrido, Douglas and Ityanagui, Gustavo Eiji and Navi, Matheus and J{\'u}nior, Adenilson Francisco Tetzener and Rocha, Cristiano and de Oliveira Silv{\'e}rio, Guilherme and de Faria, Paulo C{\'e}zar},
+  year={2015},
+  journal={XIX Simpósio Nacional de Ensino de Física},
+  publisher={Universidade Federal de São Carlos}
+}
+
+@article{crespan2024catalogo,
+  title={El Cat{\'a}logo de estrellas de Hiparco},
+  author={Cresp{\'a}n, C{\'e}sar Gonz{\'a}lez},
+  journal={Journal of Computational Astronomy and Astronomical Computing (JCAAC)},
+  number={1},
+  year={2024}
+}
+
+@book{sagan1980cosmos,
+  author    = {Sagan, Carl},
+  title     = {Cosmos},
+  year      = {1980},
+  publisher = {Random House},
+  address   = {New York},
+  note      = {Tradução para o português. Disponível em:
+               \url{https://ia800805.us.archive.org/34/items/cosmos_de_carl_sagan/cosmos_de_carl_sagan.pdf}.
+               Acesso em: 16 jun. 2026}
+}
+
+@book{veyne2024nosso,
+  title={Quando nosso mundo se tornou crist{\~a}o},
+  author={Veyne, Paul},
+  year={2024},
+  publisher={Civiliza{\c{c}}{\~a}o Brasileira}
+}
+
+@book{kuhn2002revoluccao,
+  title={Revolu{\c{c}}{\~a}o Copernicana},
+  author={Kuhn, Thomas S},
+  year={2002},
+  publisher={Edi{\c{c}}{\~o}es 70, Lisboa}
+}
+
+
+@misc{alencar_historia_linux,
+  author       = {Alencar, Marcelo Sampaio de},
+  title        = {A Hist{\'o}ria do Linux},
+  institution  = {Instituto de Estudos Avan{\c{c}}ados em Comunica{\c{c}}{\~o}es (Iecom), Universidade Federal de Campina Grande (UFCG)},
+  year={2012},
+  howpublished = {\url{https://rotasul.net/linux/historia_linux.pdf}},
+  note         = {Acesso em: 21 jun. 2026}
+}
+
+@mastersthesis{carvalho2006trajetoria,
+  author       = {Carvalho, Marcelo S{\'a}vio Revoredo Menezes de},
+  title        = {A trajet{\'o}ria da internet no Brasil: do surgimento das redes de computadores {\`a} institui{\c{c}}{\~a}o dos mecanismos de governan{\c{c}}a},
+  school       = {COPPE, Universidade Federal do Rio de Janeiro},
+  year         = {2006},
+  address      = {Rio de Janeiro},
+  type         = {Disserta{\c{c}}{\~a}o de Mestrado},
+  note         = {Dispon{\'i}vel em: \url{https://pesc.coppe.ufrj.br/uploadfile/1430748034.pdf}. Acesso em: 21 jun. 2026}
+}
+
+@misc{mattos2008virtualizacao,
+  author       = {Mattos, Diogo Menezes Ferrazani},
+  title        = {Virtualiza{\c{c}}{\~a}o: VMware e Xen},
+  institution  = {Grupo de Teleinform{\'a}tica e Automa{\c{c}}{\~a}o (GTA), COPPE/Poli, Universidade Federal do Rio de Janeiro},
+  year         = {2008},
+  address      = {Rio de Janeiro},
+  howpublished = {\url{https://www.gta.ufrj.br/grad/08_1/virtual/artigo.pdf}},
+  note         = {Acesso em: 21 jun. 2026}
+}
+
+
+@article{santos2012virtualizaccao,
+  title={Virtualiza{\c{c}}{\~a}o de servidores em ambientes corporativos},
+  author={SANTOS, F{\'a}bio Rodrigo dos},
+  year={2012},
+  publisher={004}
+}
+
+
+@book{kurose_redes,
+  author    = {Kurose, James F. and Ross, Keith W.},
+  title     = {Redes de computadores e a internet: uma abordagem top-down},
+  publisher = {Pearson},
+  address   = {S{\~a}o Paulo},
+  note      = {Confirmar edi{\c{c}}{\~a}o e ano do exemplar utilizado}
+}
+
+@misc{php_history,
+  author       = {{The PHP Group}},
+  title        = {History of PHP},
+  howpublished = {\url{https://www.php.net/manual/en/history.php.php}},
+  note         = {Acesso em: 21 jun. 2026}
+}
+
+@article{Vieira_Dian_2023, place={Taquaritinga, SP}, title={IMPACT AND GROWTH OF THE INTERNET IN THE LAST YEARS}, volume={20}, url={https://revista.fatectq.edu.br/interfacetecnologica/article/view/1656}, DOI={10.31510/infa.v20i1.1656}, number={1}, journal={Revista Interface Tecnológica}, author={Vieira, Gustavo and Dian, Mauricio de Oliveira}, year={2023}, month={Jun.}, pages={122–133} }
+
+@book{lindholm2013java,
+  title={The Java virtual machine specification},
+  author={Lindholm, Tim and Yellin, Frank and Bracha, Gilad and Buckley, Alex},
+  year={2013},
+  publisher={Addison-wesley}
+}
+
+@techreport{gosling1996java,
+  author      = {Gosling, James and McGilton, Henry},
+  title       = {The Java language environment: a white paper},
+  institution = {Sun Microsystems},
+  address     = {Mountain View},
+  year        = {1996}
+}
+
+@article{oliphant2007python,
+  author  = {Oliphant, Travis E.},
+  title   = {Python for scientific computing},
+  journal = {Computing in Science \& Engineering},
+  volume  = {9},
+  number  = {3},
+  pages   = {10--20},
+  year    = {2007},
+  doi     = {10.1109/MCSE.2007.58}
+}
+
+@article{tilkov2010nodejs,
+  author  = {Tilkov, Stefan and Vinoski, Steve},
+  title   = {Node.js: using JavaScript to build high-performance network programs},
+  journal = {IEEE Internet Computing},
+  volume  = {14},
+  number  = {6},
+  pages   = {80--83},
+  year    = {2010},
+  doi     = {10.1109/MIC.2010.145}
+}
+
+@misc{dhh_rails_doctrine,
+  author       = {Heinemeier Hansson, David},
+  title        = {The Rails Doctrine},
+  howpublished = {\url{https://rubyonrails.org/doctrine}},
+  note         = {Acesso em: 21 jun. 2026}
+}
+
+@article{barboza2014evoluccao,
+  title={A evolu{\c{c}}{\~a}o tecnol{\'o}gica dos jogos eletr{\^o}nicos: do videogame para o newsgame},
+  author={BARBOZA, Eduardo and SILVA, Ana},
+  journal={5{\textordmasculine} Simp{\'o}sio Internacional de Ciberjornalismo},
+  pages={1--16},
+  year={2014}
+}
+
+@book{juric2024elixir,
+  title={Elixir in action},
+  author={Juric, Sa{\v{s}}a},
+  year={2024},
+  publisher={Simon and Schuster}
+}
+
+@inproceedings{nguyen2025resilient,
+  title={Resilient Edge Computing: An Elixir-BEAM Architecture for IoT Gas Leakage Detection},
+  author={Nguyen, Triet Ta Minh and Pham, Van Dai and Do, Phuc Hao and Dinh, Truong Duy and Le, Tran Duc},
+  booktitle={Proceedings of the 2025 10th International Conference on Cloud Computing and Internet of Things},
+  pages={130--137},
+  year={2025}
+}
+
+@book{lessel2019phoenix,
+  title={Phoenix in Action},
+  author={Lessel, Geoffrey},
+  year={2019},
+  publisher={Simon and Schuster}
+}
+
+@inproceedings{rodriguez2024elixir,
+  title={Elixir-Powered Low-Income Animal Shelter Support: An Experience Report from Conception to Production},
+  author={Rodr{\'\i}guez Est{\'e}vez, Carla and Castro, Laura M},
+  booktitle={Proceedings of the 23rd ACM SIGPLAN International Workshop on Erlang},
+  pages={96--107},
+  year={2024}
+}
+
+@article{rokiman2025implementasi,
+  title={Implementasi Web Server Casaos Menggunakan Docker dan Cloudflare Tunnels pada Linux Ubuntu},
+  author={Rokiman, Rokiman and Azindani, Aziz and Akhsani, Ilham},
+  journal={Informatic and Elektronic Technology Journal},
+  volume={1},
+  number={1},
+  pages={09--15},
+  year={2025}
+}
+
+@article{lazuardy2022modern,
+  title={Modern front end web architectures with react. js and next. js},
+  author={Lazuardy, Mochammad Fariz Syah and Anggraini, Dyah},
+  journal={Research Journal of Advanced Engineering and Science},
+  volume={7},
+  number={1},
+  pages={132--141},
+  year={2022}
+}
+
+@book{nielsen2013mobile,
+  title={Mobile usability},
+  author={Nielsen, Jakob and Budiu, Raluca},
+  year={2013},
+  publisher={MITP-Verlags GmbH \& Co. KG}
+}
+
+@inproceedings{nielsen1994usability,
+  title={Usability inspection methods},
+  author={Nielsen, Jakob},
+  booktitle={Conference companion on Human factors in computing systems},
+  pages={413--414},
+  year={1994}
+}
+
+@book{norman2013models,
+  title={Models of human memory},
+  author={Norman, Donald A},
+  year={2013},
+  publisher={Elsevier}
+}
+
+
+@book{bettex1965,
+  author    = {Bettex, Albert W.},
+  title     = {The Discovery of Nature},
+  year      = {1965},
+  publisher = {Simon and Schuster},
+  address   = {New York}
+}

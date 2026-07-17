@@ -179,9 +179,12 @@ export default function HomePage() {
           </form>
         )}
 
-        <div className="text-center mt-6">
+        <div className="text-center mt-6 flex justify-center gap-4">
           <Link href="/about" className="text-white/40 hover:text-white/70 text-sm transition-colors">
             Sobre o projeto
+          </Link>
+          <Link href="/references" className="text-white/40 hover:text-white/70 text-sm transition-colors">
+            Referências
           </Link>
         </div>
     </ScreenLayout>
