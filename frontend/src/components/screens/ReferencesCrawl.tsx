@@ -52,9 +52,24 @@ export default function ReferencesCrawl({ references }: ReferencesCrawlProps) {
         BIBLIOGRÁFICAS
       </h1>
       <p className="text-yellow-300/90 text-lg md:text-xl leading-relaxed">
-        Toda jornada rumo a exoplanetas distantes começa com o conhecimento de quem observou o
-        céu antes de nós. As obras a seguir sustentam cada pergunta deste jogo, listadas em
-        ordem alfabética conforme a norma ABNT NBR 6023.
+        Toda jornada em direção aos exoplanetas começa com o conhecimento construído por aqueles que
+        dedicaram seus estudos à compreensão do Universo. As referências a seguir fundamentam o conteúdo científico, a arquitetura,
+        o design, as escolhas pedagógicas, a construção das mecânicas de jogo, a elaboração das perguntas,
+        os recursos visuais e a experiência de aprendizagem que deram origem a este jogo sobre exoplanetas. Organizadas
+        em ordem alfabética, elas seguem as diretrizes da ABNT NBR 6023, reconhecendo as contribuições que tornaram este projeto possível
+        e reafirmando o compromisso com a divulgação científica baseada em fontes confiáveis.
+      </p>
+    </div>
+  );
+
+  const outro = (
+    <div className="text-center mt-16">
+      <p className="text-yellow-300/90 text-lg md:text-xl leading-relaxed">
+        A todos os pesquisadores, educadores, autores, instituições e iniciativas que
+        compartilharam seu conhecimento e inspiraram este projeto, fica registrado o nosso mais
+        sincero muito obrigado. Cada descoberta, publicação e contribuição representada nas
+        referências a seguir tornou possível aproximar o fascinante universo dos exoplanetas de
+        novos exploradores do conhecimento.
       </p>
     </div>
   );
@@ -98,6 +113,7 @@ export default function ReferencesCrawl({ references }: ReferencesCrawlProps) {
                 <li key={ref.key} dangerouslySetInnerHTML={{ __html: ref.html }} />
               ))}
             </ol>
+            {outro}
           </div>
         </div>
       ) : (
@@ -110,6 +126,7 @@ export default function ReferencesCrawl({ references }: ReferencesCrawlProps) {
                   <li key={ref.key} dangerouslySetInnerHTML={{ __html: ref.html }} />
                 ))}
               </ol>
+              {outro}
             </div>
           </div>
         </div>

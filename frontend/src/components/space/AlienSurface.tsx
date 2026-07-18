@@ -126,6 +126,20 @@ export default function AlienSurface() {
               nativos via Phoenix Channels, que é a mesma base de concorrência usada por sistemas como
               o WhatsApp.
             </p>
+            <div className="pt-2">
+              <p>
+                A pontuação de cada resposta certa combina um valor fixo com um bônus por
+                velocidade: quem responde mais rápido, dentro do tempo limite da pergunta, ganha
+                mais pontos.
+              </p>
+              <div className="mt-3 bg-white/5 border border-white/10 rounded-xl p-4 font-mono text-xs md:text-sm text-center text-cyan-200 overflow-x-auto">
+                pontos = 1000 + máx(0, tempo_limite − tempo_de_resposta) × 10
+              </div>
+              <p className="text-white/60 text-sm mt-2">
+                Respostas erradas não somam pontos, e o resultado é arredondado. O placar é
+                atualizado em tempo real conforme cada jogador responde.
+              </p>
+            </div>
             <p className="text-white/60 text-sm pt-2 border-t border-white/10">
               Desenvolvido por <strong className="text-white/80">Reinan Bezerra</strong> como
               Trabalho de Conclusão de Curso da Licenciatura em Física do Instituto Federal de
