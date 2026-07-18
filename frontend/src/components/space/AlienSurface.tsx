@@ -111,19 +111,19 @@ export default function AlienSurface() {
             <p>
               ExoGame é uma plataforma <em>web</em> gamificada de perguntas e respostas em tempo
               real, inspirada na mecânica do Kahoot!, criada para tornar o aprendizado de
-              astronomia — em especial sobre exoplanetas — mais envolvente e acessível.
+              astronomia, em especial sobre exoplanetas, mais envolvente e acessível.
             </p>
             <p>
               A ideia nasceu de uma constatação simples: apesar dos milhares de exoplanetas já
               descobertos, o ensino de astronomia ainda ocupa pouco espaço nas salas de aula
-              brasileiras. O ExoGame usa a gamificação — pontuação por tempo de resposta, avatares
-              personalizáveis e placar em tempo real — para transformar esse conteúdo abstrato
+              brasileiras. O ExoGame usa a gamificação com pontuação por tempo de resposta, avatares
+              personalizáveis e placar em tempo real, para transformar esse conteúdo abstrato
               numa experiência coletiva e divertida.
             </p>
             <p>
               Por trás da cena, o jogo roda com <strong>Next.js</strong> no frontend e{' '}
               <strong>Phoenix (Elixir/BEAM)</strong> no backend, comunicando-se por WebSockets
-              nativos via Phoenix Channels — a mesma base de concorrência usada por sistemas como
+              nativos via Phoenix Channels, que é a mesma base de concorrência usada por sistemas como
               o WhatsApp.
             </p>
             <p className="text-white/60 text-sm pt-2 border-t border-white/10">
