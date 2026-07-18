@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "latex-cite-editor": "file:../../../../libs/npm/latex-cite-editor",
+    "latex-cite-editor": "^0.2.0",
     "next": "15.5.2",
     "phoenix": "^1.8.4",
     "react": "19.1.0",
