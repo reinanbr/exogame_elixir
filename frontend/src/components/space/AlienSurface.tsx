@@ -102,7 +102,7 @@ export default function AlienSurface() {
       <div className="relative z-20 flex items-end justify-center min-h-screen px-4 pb-16 pt-32">
         <div className="glass-panel rounded-3xl p-8 md:p-10 max-w-2xl text-white">
           <p className="text-white/50 italic text-sm mb-4 text-center">
-            &ldquo;Em algum lugar, algo incrível está esperando para ser descoberto.&rdquo; — Carl Sagan
+            &ldquo;Em algum lugar, algo incrível está esperando para ser descoberto.&rdquo; - Carl Sagan
           </p>
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4 bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent text-center">
             Sobre o ExoGame
